@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+
+        <variable
+            name="presenter"
+            type="com.spe.dcs.login.SettingActivity.Presenter" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/background_light"
+        android:layout_height="wrap_content"
+        android:onClick="@{presenter::url_click}"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务器路径"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/tv_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="@dimen/padding_lv0_1"
+            android:text="" />
+    </LinearLayout>
+</layout>

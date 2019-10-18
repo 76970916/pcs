@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".common.QrcodeActivity">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.spe.dcs.common.ImageListActivity.Presenter" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:horizontalSpacing="@dimen/padding_lv10"
+            android:numColumns="3"
+            android:padding="@dimen/padding_lv10"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/padding_lv10"></GridView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_middler_height"
+            android:layout_margin="@dimen/padding_lv2"
+            android:background="@drawable/bt_bg"
+            android:gravity="center"
+            android:onClick="@{presenter :: saves}"
+            android:text="@string/saves"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_6" />
+    </LinearLayout>
+</layout>

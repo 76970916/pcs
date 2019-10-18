@@ -1,0 +1,1413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="java.lang.Double" />
+
+        <variable
+            name="presenter"
+            type="com.spe.dcs.project.chddcro.CHddCroActivity.Presenter" />
+
+        <variable
+            name="sysUserEntity"
+            type="com.spe.dcs.system.sysuser.SysUserEntity" />
+
+        <variable
+            name="cHddCroEntity"
+            type="com.spe.dcs.project.chddcro.CHddCroEntity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/login_scroller"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/padding_lv2"
+            android:layout_marginTop="@dimen/padding_lv2"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/short_white_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_projectNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/cHddCro_projectNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_pipelineNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/cHddCro_oneProjectNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_unitNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/cHddCro_unitNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_crossingNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/cHddCross_functionNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"></Spinner>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_sectionNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/cHddCross_sectionNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_crossingDescription"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCro_branchengineeringNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@{cHddCroEntity.branchengineeringNumber}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_crossingDepartment"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_crossingCode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@{cHddCroEntity.crossingCode}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_length"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_length"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:text="@{cHddCroEntity.crossingName}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_crossingMaxDepth"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_category"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@{cHddCroEntity.category}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_startStakeNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_initialStakeNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@{cHddCroEntity.initialStakeNumber}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_startRelativeMileage"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_initialRelativeMileage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:digits="0123456789."
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@{cHddCroEntity.initialRelativeMileage}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_endStakeNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_endStakeNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@{cHddCroEntity.endStakeNumber}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_endRelativeMileage"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_endRelativeMileage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:digits="0123456789."
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@{cHddCroEntity.endRelativeMileage}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_penetrationX"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_eastingOfStartPoint"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:digits="0123456789."
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@{cHddCroEntity.eastingOfStartPoint}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_penetrationY"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:textSize="@dimen/tv_6"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_northingOfStartPoint"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:digits="0123456789."
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@{cHddCroEntity.northingOfStartPoint}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_excavatedX"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_eastingOfEndPoint"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:digits="0123456789."
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@{cHddCroEntity.eastingOfEndPoint}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_excavatedY"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_northingOfEndPoint"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:digits="0123456789."
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@{cHddCroEntity.northingOfEndPoint}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cWeldjoint_supervisionEngineer"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cWeldjoint_supervisionEngineer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:text="@={cHddCroEntity.supervisionEngineer}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cWeldjoint_supervisionUnitId"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <!--weldingUnitId-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/cWeld_supervisionUnitId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/cHddCross_commencementDate"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <TextView
+                        android:id="@+id/cHddCross_commencementDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/ic_date_range_black_36dp"
+                        android:gravity="center"
+                        android:onClick="@{presenter::date_click}"
+                        android:paddingLeft="@dimen/padding_lv2"
+                        android:paddingRight="@dimen/padding_lv2"
+                        android:text="@{cHddCroEntity.commencementDate}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/cHddCross_completionDate"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <TextView
+                        android:id="@+id/cHddCross_completionDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/ic_date_range_black_36dp"
+                        android:gravity="center"
+                        android:onClick="@{presenter::date_click}"
+                        android:paddingLeft="@dimen/padding_lv2"
+                        android:paddingRight="@dimen/padding_lv2"
+                        android:text="@{cHddCroEntity.completionDate}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_constructionUnitId"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_constructionUnitId"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_supervisionUnitId"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_supervisionUnitId"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_collectionPerson"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_collectionPerson"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_supervisionEngineer"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cHddCross_supervisionEngineer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/cHddCross_collectionDate"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <TextView
+                        android:id="@+id/cHddCross_collectionDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/ic_date_range_black_36dp"
+                        android:gravity="center"
+                        android:onClick="@{presenter::date_click}"
+                        android:paddingLeft="@dimen/padding_lv2"
+                        android:paddingRight="@dimen/padding_lv2"
+                        android:text="@{cHddCroEntity.collectionDate}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_height"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bt_middler_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_bg"
+                android:gravity="center"
+                android:onClick="@{presenter :: list_click}"
+                android:text="@string/list_"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_6" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bt_middler_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_bg"
+                android:gravity="center"
+                android:onClick="@{presenter ::save_click}"
+                android:text="@string/saves"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_6" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bt_middler_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_bg"
+                android:gravity="center"
+                android:onClick="@{presenter ::again_click}"
+                android:text="@string/again"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_6" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

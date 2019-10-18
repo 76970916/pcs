@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:id="@+id/rl_head_update_config"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_lv2"
+            android:drawableLeft="@drawable/ic_cached_grey_500_24dp"
+            android:drawablePadding="@dimen/padding_lv2"
+            android:gravity="center"
+            android:text="@string/head_update_config"
+            android:textColor="@color/black_light_e" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_9" />
+
+    <RelativeLayout
+        android:id="@+id/rl_head_upload_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_lv2"
+            android:drawableLeft="@drawable/ic_cloud_upload_grey_500_24dp"
+            android:drawablePadding="@dimen/padding_lv2"
+            android:gravity="center"
+            android:text="@string/head_upload_data"
+            android:textColor="@color/black_light_e" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_9" />
+
+    <RelativeLayout
+        android:id="@+id/rl_head_update_version"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_lv2"
+            android:drawableLeft="@drawable/ic_get_app_grey_500_24dp"
+            android:drawablePadding="@dimen/padding_lv2"
+            android:gravity="center"
+            android:text="@string/head_update_version"
+            android:textColor="@color/black_light_e" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_9" />
+
+    <RelativeLayout
+        android:id="@+id/rl_head_exit_sys"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_lv2"
+            android:drawableLeft="@drawable/ic_exit_to_app_grey_500_24dp"
+            android:drawablePadding="@dimen/padding_lv2"
+            android:gravity="center"
+            android:text="@string/head_exit_sys"
+            android:textColor="@color/black_light_e" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_9" />
+
+</LinearLayout>

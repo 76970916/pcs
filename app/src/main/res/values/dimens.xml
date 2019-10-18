@@ -1,0 +1,99 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="big_big_height">100dp</dimen>
+    <dimen name="bar_height">48dp</dimen>
+    <dimen name="bt_height">70dp</dimen>
+    <dimen name="big_height">80dp</dimen>
+    <dimen name="bt_middler_height">45dp</dimen>
+    <dimen name="bt_small_height">40dp</dimen>
+    <dimen name="bt_small_size_height">35dp</dimen>
+    <dimen name="line2">1dp</dimen>
+    <dimen name="line3">0.5dp</dimen>
+    <dimen name="line">0.5dp</dimen>
+    <dimen name="padding_lv0">2dp</dimen>
+    <dimen name="padding_lv0_1">5dp</dimen>
+    <dimen name="padding_lv1">6dp</dimen>
+    <dimen name="padding_lv1_3">8dp</dimen>
+    <dimen name="padding_lv2">10dp</dimen>
+    <dimen name="padding_lv2_1">11dp</dimen>
+    <dimen name="padding_lv3">12dp</dimen>
+    <dimen name="padding_lv4">13dp</dimen>
+    <dimen name="padding_lv5">14dp</dimen>
+    <dimen name="padding_lv6">15dp</dimen>
+    <dimen name="padding_lv7">16dp</dimen>
+    <dimen name="padding_lv8">18dp</dimen>
+    <dimen name="padding_lv9">20dp</dimen>
+    <dimen name="padding_lv10">25dp</dimen>
+    <dimen name="padding_lv11">30dp</dimen>
+    <dimen name="tv_0">9sp</dimen>
+    <dimen name="tv_1">11sp</dimen>
+    <dimen name="tv_1_1">12sp</dimen>
+    <dimen name="tv_2">13sp</dimen>
+    <dimen name="tv_3">15sp</dimen>
+    <dimen name="tv_4">17sp</dimen>
+    <dimen name="tv_5">19sp</dimen>
+    <dimen name="tv_6">16sp</dimen>
+    <dimen name="tv_7">23sp</dimen>
+    <dimen name="tv_10">29sp</dimen>
+    <dimen name="tv_14">14sp</dimen>
+
+    <!-- headerbar height -->
+    <dimen name="header_bar_height">70dp</dimen>
+
+    <dimen name="qrcode_crop_width">200dp</dimen>
+    <dimen name="qrcode_crop_height">200dp</dimen>
+
+    <dimen name="barcode_crop_width">260dp</dimen>
+    <dimen name="barcode_crop_height">140dp</dimen>
+
+    <!-- 顶部按钮栏高度 -->
+    <!-- 顶部按钮paddingLeft -->
+    <!-- 顶部按钮paddingRight -->
+    <!-- 顶部按钮文字大小 -->
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+
+    <!-- expandableview -->
+    <dimen name="expand_item_minheight">70dp</dimen>
+    <dimen name="expand_item_minwidth">70dp</dimen>
+    <!--Wheel-->
+    <dimen name="calendar_day_headers_paddingbottom">4dp</dimen>
+    <dimen name="calendar_month_topmargin">16dp</dimen>
+    <dimen name="calendar_month_title_bottommargin">4dp</dimen>
+    <dimen name="LEFT">5dp</dimen>
+    <dimen name="calendar_text_medium">18sp</dimen>
+    <dimen name="calendar_text_small">14sp</dimen>
+    <!--AlertDialog-->
+    <dimen name="alert_width">290dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+
+
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">16sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">18sp</dimen>
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+    <dimen name="pickerview_textsize">18sp</dimen>
+    <dimen name="paddingleft">25dp</dimen>
+    <dimen name="paddingright">25dp</dimen>
+    <dimen name="paddingtop">7dp</dimen>
+    <dimen name="paddingbottom">7dp</dimen>
+    <dimen name="common_now_price_size">14sp</dimen>
+    <dimen name="common_ori_price_size">13sp</dimen>
+    <dimen name="common_des_price_size">10sp</dimen>
+    <dimen name="common_price_size">16sp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+</resources>

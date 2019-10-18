@@ -1,0 +1,1708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="java.lang.Double" />
+
+        <variable
+            name="presenter"
+            type="com.spe.dcs.project.copencutcro.COpenCutCroLookActivity.Presenter" />
+
+        <variable
+            name="sysUserEntity"
+            type="com.spe.dcs.system.sysuser.SysUserEntity" />
+
+        <variable
+            name="cOpenCutCroEntity"
+            type="com.spe.dcs.project.copencutcro.COpenCutCroEntity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/login_scroller"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/padding_lv2"
+            android:layout_marginTop="@dimen/padding_lv2"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/short_white_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_projectName"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_projectNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{cOpenCutCroEntity.projectNumber}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_pipelineNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_oneProjectNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{cOpenCutCroEntity.subprojectNumber}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_unit"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{cOpenCutCroEntity.projectUnitNumber}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_function"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_function"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{cOpenCutCroEntity.functionalAreaCode}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_sectionNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_sectionNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{cOpenCutCroEntity.section}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_crossingNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_crossingDescription"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_branchengineeringNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.branchengineeringNumber}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_crossingDepartment"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cExcavationCross_crossingName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.crossingName}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_length"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cExcavationCross_crossingNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.crossingCode}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_crossingMaxDepth"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.category}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_startStakeNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_initialStakeNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.initialStakeNumber}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_startRelativeMileage"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_initialRelativeMileage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.initialRelativeMileage}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_endStakeNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_endStakeNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.endStakeNumber}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_endRelativeMileage"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_endRelativeMileage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.endRelativeMileage}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_startX"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_eastingOfStartPoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.eastingOfStartPoint}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_startY"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_northingOfStartPoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.northingOfStartPoint}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_startZ"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_endX"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_eastingOfEndPoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.eastingOfEndPoint}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_endY"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_northingOfEndPoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.northingOfEndPoint}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_endZ"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_steadyTubeMeasures"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_openCut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.openCut}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cExcavationCross_crosslength"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cOpencut_crossingLength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@={cOpenCutCroEntity.crossingLength}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_collectionPerson"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cHddCross_collectionPerson"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@{cOpenCutCroEntity.collectionPerson}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_constructionUnitId"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cHddCross_constructionUnitId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@{cOpenCutCroEntity.constructionUnitId}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_penetrationAngle"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cHddCross_supervisionEngineer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@{cOpenCutCroEntity.supervisionEngineer}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cHddCross_excavatedAngle"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cHddCross_excavatedAngle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv0_1"
+                            android:paddingRight="@dimen/padding_lv0_1"
+                            android:text="@{cOpenCutCroEntity.supervisionUnitId}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/cExcavationCross_commencementDate"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cExcavationCross_commencementDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv2"
+                            android:paddingRight="@dimen/padding_lv2"
+                            android:text="@={cOpenCutCroEntity.commencementDate}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/cExcavationCross_completionDate"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cExcavationCross_completionDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv2"
+                            android:paddingRight="@dimen/padding_lv2"
+                            android:text="@={cOpenCutCroEntity.completionDate}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/cExcavationCross_collectionDate"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cExcavationCross_collectionDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv2"
+                            android:paddingRight="@dimen/padding_lv2"
+                            android:text="@={cOpenCutCroEntity.collectionDate}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/takePhoto"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cExcavationCross_takePhpto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/padding_lv2"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <ImageView
+                            android:id="@+id/cExcavationCross_camara"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:onClick="@{presenter ::lookPic}"
+                            android:src="@drawable/addcamera" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

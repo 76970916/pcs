@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_lv9"
+            android:text="@string/pipline_info"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_4" />
+
+        <ImageView
+            android:id="@+id/iv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_lv2"
+            android:padding="@dimen/padding_lv2"
+            android:src="@drawable/ic_close_black_24dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/padding_lv2"
+        android:layout_marginLeft="@dimen/padding_lv9"
+        android:layout_marginRight="@dimen/padding_lv9"
+        android:background="@drawable/round_white"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none">
+
+    </ListView>
+</LinearLayout>

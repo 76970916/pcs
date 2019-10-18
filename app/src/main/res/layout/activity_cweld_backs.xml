@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.spe.dcs.project.cweldjoint.CWeldJointBackActivity.Presenter" />
+    </data>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_lv5"
+        android:layout_marginRight="@dimen/padding_lv5"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_height"
+            android:layout_marginLeft="@dimen/padding_lv2"
+            android:layout_marginTop="@dimen/header_bar_height"
+            android:layout_marginRight="@dimen/padding_lv2"
+            android:background="@drawable/short_activity_bg"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/cWeld_sectionNumber"
+                    android:textColor="@color/black_light_e"
+                    android:textSize="@dimen/tv_6" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_9" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/cWeld_sectionNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_height"
+            android:layout_marginLeft="@dimen/padding_lv2"
+            android:layout_marginRight="@dimen/padding_lv2"
+            android:background="@drawable/short_activity_bg"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/cWeld_weldNum"
+                    android:textColor="@color/black_light_e"
+                    android:textSize="@dimen/tv_6" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_9" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/cWeld_weldNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@null"
+                    android:hint="@string/need_input_weldNum"
+                    android:textColor="@color/black_light_e"
+                    android:textColorHint="@color/black_light_e"
+                    android:textSize="@dimen/tv_6"></EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_height"
+            android:layout_marginLeft="@dimen/padding_lv2"
+            android:layout_marginRight="@dimen/padding_lv2"
+            android:background="@drawable/short_activity_bg"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/cWeld_stakeNumber"
+                    android:textColor="@color/black_light_e"
+                    android:textSize="@dimen/tv_6" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_9" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/cWeld_stakeNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/need_input_stakeNumber"
+                    android:textColor="@color/black_light_e"
+                    android:textColorHint="@color/black_light_e"
+                    android:textSize="@dimen/tv_6"></EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_height"
+            android:layout_marginLeft="@dimen/padding_lv2"
+            android:layout_marginRight="@dimen/padding_lv2"
+            android:background="@drawable/short_activity_bg"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/cWeld_weldingUnitName"
+                    android:textColor="@color/black_light_e"
+                    android:textSize="@dimen/tv_6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:text="*"
+                    android:textColor="@color/red_deep"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_9" />
+
+            <!--weldingUnitId-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/cWeld_weldingUnitId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"></Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/header_bar_height"
+            android:background="@color/first_dianji"
+            android:onClick="@{presenter::set_clicks}"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_6" />
+    </LinearLayout>
+</layout>
+
+

@@ -1,0 +1,4595 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "5d010e5b976460ae11b5ea426feb6813",
+    "entities": [
+      {
+        "tableName": "SYS_USER",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `USER_CODE` TEXT, `CODE` TEXT, `SORT` TEXT, `NAME` TEXT, `WORKNO` TEXT, `PASSWORD` TEXT, `SEX` TEXT, `DESCRIPTION` TEXT, `INDATE` TEXT, `OUTDATE` TEXT, `PHONE` TEXT, `MOBILEPHONE` TEXT, `EMAIL` TEXT, `ADDRESS` TEXT, `SORTINDEX` TEXT, `LASTLOGINTIME` TEXT, `LASTLOGINIP` TEXT, `LASTSESSIONID` TEXT, `ERRORCOUNT` TEXT, `ERRORTIME` TEXT, `ISDELETED` TEXT, `DELETETIME` TEXT, `PRJID` TEXT, `PRJNAME` TEXT, `DEPTID` TEXT, `DEPTFULLID` TEXT, `DEPTNAME` TEXT, `RTX` TEXT, `MODIFYTIME` TEXT, `WEIXIN` TEXT, `SIGNPWD` TEXT, `ISSHOW` TEXT, `CORPID` TEXT, `CORPNAME` TEXT, `NAMEEN` TEXT, `PORTALSETTINGS` TEXT, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `UNIFIED_ACCOUNT` TEXT, `ORG_ID` TEXT, `ORG_NAME` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userCode",
+            "columnName": "USER_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sort",
+            "columnName": "SORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "workno",
+            "columnName": "WORKNO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "password",
+            "columnName": "PASSWORD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sex",
+            "columnName": "SEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "indate",
+            "columnName": "INDATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "outdate",
+            "columnName": "OUTDATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phone",
+            "columnName": "PHONE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mobilephone",
+            "columnName": "MOBILEPHONE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "EMAIL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "address",
+            "columnName": "ADDRESS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortindex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastlogintime",
+            "columnName": "LASTLOGINTIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastloginip",
+            "columnName": "LASTLOGINIP",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastsessionid",
+            "columnName": "LASTSESSIONID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "errorcount",
+            "columnName": "ERRORCOUNT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "errortime",
+            "columnName": "ERRORTIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isdeleted",
+            "columnName": "ISDELETED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "deletetime",
+            "columnName": "DELETETIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "prjid",
+            "columnName": "PRJID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "prjname",
+            "columnName": "PRJNAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "deptid",
+            "columnName": "DEPTID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "deptfullid",
+            "columnName": "DEPTFULLID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "deptname",
+            "columnName": "DEPTNAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rtx",
+            "columnName": "RTX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifytime",
+            "columnName": "MODIFYTIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weixin",
+            "columnName": "WEIXIN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "signpwd",
+            "columnName": "SIGNPWD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isshow",
+            "columnName": "ISSHOW",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "corpid",
+            "columnName": "CORPID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "corpname",
+            "columnName": "CORPNAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nameen",
+            "columnName": "NAMEEN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "portalsettings",
+            "columnName": "PORTALSETTINGS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "unifiedAccount",
+            "columnName": "UNIFIED_ACCOUNT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "orgId",
+            "columnName": "ORG_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "orgName",
+            "columnName": "ORG_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_FIELD",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `TABLEID` TEXT, `CODE` TEXT, `NAME` TEXT, `TYPE` TEXT, `SORTINDEX` TEXT, `DESCRIPTION` TEXT, `LENGTH` TEXT, `LENGTH_SCALE` TEXT, `ISPRIMARYKEY` TEXT, `VALIDATERULE` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tableid",
+            "columnName": "TABLEID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortindex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "length",
+            "columnName": "LENGTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lengthScale",
+            "columnName": "LENGTH_SCALE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isprimarykey",
+            "columnName": "ISPRIMARYKEY",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "validaterule",
+            "columnName": "VALIDATERULE",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_TABLE",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CODE` TEXT, `NAME` TEXT, `SORTINDEX` TEXT, `DESCRIPTION` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortindex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_DOMAIN",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `TYPE` TEXT, `VAL` TEXT, `NAME` TEXT, `SORTINDEX` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "val",
+            "columnName": "VAL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortindex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_CATEGORY",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `PARENTID` TEXT, `FULLID` TEXT, `CODE` TEXT, `NAME` TEXT, `SORTINDEX` TEXT, `DESCRIPTION` TEXT, `CATEGORYCODE` TEXT, `ICONCLASS` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "parentid",
+            "columnName": "PARENTID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fullid",
+            "columnName": "FULLID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortindex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "categorycode",
+            "columnName": "CATEGORYCODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "iconclass",
+            "columnName": "ICONCLASS",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_ORG",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `PARENTID` TEXT, `FULLID` TEXT, `CODE` TEXT, `NAME` TEXT, `TYPE` TEXT, `SORTINDEX` TEXT, `DESCRIPTION` TEXT, `ISDELETED` TEXT, `DELETETIME` TEXT, `SHORTNAME` TEXT, `CHARACTER` TEXT, `LOCATION` TEXT, `ISSHOW` TEXT, `ISINDEPENDENTMANAGEMENT` TEXT, `NAMEEN` TEXT, `ISPRODUCE` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "parentid",
+            "columnName": "PARENTID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fullid",
+            "columnName": "FULLID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortindex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isdeleted",
+            "columnName": "ISDELETED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "deletetime",
+            "columnName": "DELETETIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "shortname",
+            "columnName": "SHORTNAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "character",
+            "columnName": "CHARACTER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "location",
+            "columnName": "LOCATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isshow",
+            "columnName": "ISSHOW",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isindependentmanagement",
+            "columnName": "ISINDEPENDENTMANAGEMENT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nameen",
+            "columnName": "NAMEEN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isproduce",
+            "columnName": "ISPRODUCE",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_LIST",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CODE` TEXT, `NAME` TEXT, `SQL` TEXT, `TABLENAMES` TEXT, `FITCOLUMNS` TEXT, `RESIZEHANDLE` TEXT, `RESIZEEDGE` TEXT, `AUTOROWHEIGHT` TEXT, `STRIPED` TEXT, `METHOD` TEXT, `NOWRAP` TEXT, `IDFIELD` TEXT, `URL` TEXT, `DATA` TEXT, `LOADMSG` TEXT, `EMPTYMSG` TEXT, `PAGINATION` TEXT, `ROWNUMBERS` TEXT, `SINGLESELECT` TEXT, `CTRLSELECT` TEXT, `CHECKONSELECT` TEXT, `SELECTONCHECK` TEXT, `SCROLLONSELECT` TEXT, `PAGEPOSITION` TEXT, `PAGENUMBER` TEXT, `PAGESIZE` TEXT, `PAGELIST` TEXT, `QUERYPARAMS` TEXT, `SORTNAME` TEXT, `SORTORDER` TEXT, `MULTISORT` TEXT, `REMOTESORT` TEXT, `SHOWHEADER` TEXT, `SHOWFOOTER` TEXT, `SCROLLBARSIZE` TEXT, `ROWNUMBERWIDTH` TEXT, `CATEGORYID` TEXT, `FIT` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sql",
+            "columnName": "SQL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tablenames",
+            "columnName": "TABLENAMES",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fitcolumns",
+            "columnName": "FITCOLUMNS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "resizehandle",
+            "columnName": "RESIZEHANDLE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "resizeedge",
+            "columnName": "RESIZEEDGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "autorowheight",
+            "columnName": "AUTOROWHEIGHT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "striped",
+            "columnName": "STRIPED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "method",
+            "columnName": "METHOD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nowrap",
+            "columnName": "NOWRAP",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idfield",
+            "columnName": "IDFIELD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "URL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "data",
+            "columnName": "DATA",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "loadmsg",
+            "columnName": "LOADMSG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "emptymsg",
+            "columnName": "EMPTYMSG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pagination",
+            "columnName": "PAGINATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rownumbers",
+            "columnName": "ROWNUMBERS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "singleselect",
+            "columnName": "SINGLESELECT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ctrlselect",
+            "columnName": "CTRLSELECT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "checkonselect",
+            "columnName": "CHECKONSELECT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "selectoncheck",
+            "columnName": "SELECTONCHECK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "scrollonselect",
+            "columnName": "SCROLLONSELECT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pageposition",
+            "columnName": "PAGEPOSITION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pagenumber",
+            "columnName": "PAGENUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pagesize",
+            "columnName": "PAGESIZE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pagelist",
+            "columnName": "PAGELIST",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "queryparams",
+            "columnName": "QUERYPARAMS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortname",
+            "columnName": "SORTNAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortorder",
+            "columnName": "SORTORDER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "multisort",
+            "columnName": "MULTISORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remotesort",
+            "columnName": "REMOTESORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "showheader",
+            "columnName": "SHOWHEADER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "showfooter",
+            "columnName": "SHOWFOOTER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "scrollbarsize",
+            "columnName": "SCROLLBARSIZE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rownumberwidth",
+            "columnName": "ROWNUMBERWIDTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "categoryid",
+            "columnName": "CATEGORYID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fit",
+            "columnName": "FIT",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "M_PROJECT_INFO",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `BUILD_UNIT` TEXT, `PROJECT_ORG_TYPE` TEXT, `CAPITAL_SOURCE` TEXT, `ITEM_NATURE` TEXT, `ITEM_TYPE` TEXT, `ITEM_GRADE` TEXT, `INVEST_RELEASE_TIME` TEXT, `ITEM_INVEST` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `STAGE` TEXT, `PROJECT_NAME` TEXT, `PROJECT_NUM` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "buildUnit",
+            "columnName": "BUILD_UNIT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectOrgType",
+            "columnName": "PROJECT_ORG_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "capitalSource",
+            "columnName": "CAPITAL_SOURCE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "itemNature",
+            "columnName": "ITEM_NATURE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "itemType",
+            "columnName": "ITEM_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "itemGrade",
+            "columnName": "ITEM_GRADE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "investReleaseTime",
+            "columnName": "INVEST_RELEASE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "itemInvest",
+            "columnName": "ITEM_INVEST",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stage",
+            "columnName": "STAGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectName",
+            "columnName": "PROJECT_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNum",
+            "columnName": "PROJECT_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "M_ENTITY_FUCTION",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `FUCTION_NUM` TEXT, `FUNCTION_NAME` TEXT, `DESCRIPTION` TEXT, `PRO_UNIT_ID` TEXT, `CATEGORY` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fuctionNum",
+            "columnName": "FUCTION_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "functionName",
+            "columnName": "FUNCTION_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "proUnitId",
+            "columnName": "PRO_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "CATEGORY",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "M_ONE_PROJECT_INFO",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ONE_PROJECT_NAME` TEXT, `ONE_PROJECT_NUM` TEXT, `PROJECT_NUM` TEXT, `SORTINDEX` TEXT, `status` INTEGER NOT NULL, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "oneProjectName",
+            "columnName": "ONE_PROJECT_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "oneProjectNum",
+            "columnName": "ONE_PROJECT_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNum",
+            "columnName": "PROJECT_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortIndex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "M_CONTRACTOR_INFO",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `CONTRACTOR_TYPE` TEXT, `CONTRACTOR_NUM` TEXT, `CONTRACTOR_NAME` TEXT, `BID_NOTICE_NUM` TEXT, `BID_NOTICE` TEXT, `CONTRACT_NUM` TEXT, `CONTRACT` TEXT, `CONTRACT_PATH` TEXT, `BID_NOTICE_PATH` TEXT, `DESIGNNAME` TEXT, `SECTION_NAME` TEXT, `SECTION_NUM` TEXT, `ONE_PROJECT_NUM` TEXT, `SECTION_ID` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "contractorType",
+            "columnName": "CONTRACTOR_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "contractorNum",
+            "columnName": "CONTRACTOR_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "contractorName",
+            "columnName": "CONTRACTOR_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "bidNoticeNum",
+            "columnName": "BID_NOTICE_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "bidNotice",
+            "columnName": "BID_NOTICE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "contractNum",
+            "columnName": "CONTRACT_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "contract",
+            "columnName": "CONTRACT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "contractPath",
+            "columnName": "CONTRACT_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "bidNoticePath",
+            "columnName": "BID_NOTICE_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "designName",
+            "columnName": "DESIGNNAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sectionName",
+            "columnName": "SECTION_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sectionNum",
+            "columnName": "SECTION_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "oneProjectNum",
+            "columnName": "ONE_PROJECT_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sectionId",
+            "columnName": "SECTION_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_OPEN_CUT_CRO",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `PHOTO_PATH` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `CREATE_USER_ID` TEXT, `APPROVE_STATUS` TEXT, `SOURCE` TEXT, `PROJECT_NUMBER` TEXT, `SUBPROJECT_NUMBER` TEXT, `PROJECT_UNIT_NUMBER` TEXT, `FUNCTIONAL_AREA_CODE` TEXT, `BRANCHENGINEERING_NUMBER` TEXT, `PIPELINE_NUMBER` TEXT, `SECTION_NUMBER` TEXT, `CROSSING_NUMBER` TEXT, `CROSSING_NAME` TEXT, `CROSSING_CODE` TEXT, `CATEGORY` TEXT, `INITIAL_STAKE_NUMBER` TEXT, `INITIAL_RELATIVE_MILEAGE` TEXT, `END_STAKE_NUMBER` TEXT, `END_RELATIVE_MILEAGE` TEXT, `EASTING_OF_START_POINT` TEXT, `NORTHING_OF_START_POINT` TEXT, `EASTING_OF_END_POINT` TEXT, `NORTHING_OF_END_POINT` TEXT, `OPEN_CUT` TEXT, `CROSSING_LENGTH` TEXT, `COMMENCEMENT_DATE` TEXT, `COMPLETION_DATE` TEXT, `CONSTRUCTION_UNIT_ID` TEXT, `SUPERVISION_UNIT_ID` TEXT, `COLLECTION_PERSON` TEXT, `SUPERVISION_ENGINEER` TEXT, `COLLECTION_DATE` TEXT, `status` INTEGER NOT NULL, `SECTION` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "photoPath",
+            "columnName": "PHOTO_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approveStatus",
+            "columnName": "APPROVE_STATUS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "source",
+            "columnName": "SOURCE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNumber",
+            "columnName": "PROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subprojectNumber",
+            "columnName": "SUBPROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectUnitNumber",
+            "columnName": "PROJECT_UNIT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "functionalAreaCode",
+            "columnName": "FUNCTIONAL_AREA_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "branchengineeringNumber",
+            "columnName": "BRANCHENGINEERING_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pipelineNumber",
+            "columnName": "PIPELINE_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sectionNumber",
+            "columnName": "SECTION_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingNumber",
+            "columnName": "CROSSING_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingName",
+            "columnName": "CROSSING_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingCode",
+            "columnName": "CROSSING_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "CATEGORY",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "initialStakeNumber",
+            "columnName": "INITIAL_STAKE_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "initialRelativeMileage",
+            "columnName": "INITIAL_RELATIVE_MILEAGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "endStakeNumber",
+            "columnName": "END_STAKE_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "endRelativeMileage",
+            "columnName": "END_RELATIVE_MILEAGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "eastingOfStartPoint",
+            "columnName": "EASTING_OF_START_POINT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "northingOfStartPoint",
+            "columnName": "NORTHING_OF_START_POINT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "eastingOfEndPoint",
+            "columnName": "EASTING_OF_END_POINT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "northingOfEndPoint",
+            "columnName": "NORTHING_OF_END_POINT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "openCut",
+            "columnName": "OPEN_CUT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingLength",
+            "columnName": "CROSSING_LENGTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "commencementDate",
+            "columnName": "COMMENCEMENT_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "completionDate",
+            "columnName": "COMPLETION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionUnitId",
+            "columnName": "CONSTRUCTION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionUnitId",
+            "columnName": "SUPERVISION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionPerson",
+            "columnName": "COLLECTION_PERSON",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionEngineer",
+            "columnName": "SUPERVISION_ENGINEER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionDate",
+            "columnName": "COLLECTION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "section",
+            "columnName": "SECTION",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_HYDRAULIC_PROTECTION",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`SUBPROJECT_NUMBER` TEXT, `PROJECT_UNIT_NUMBER` TEXT, `FUNCTIONAL_AREA_CODE` TEXT, `SECTION` TEXT, `BRANCHENGINEERING_NUMBER` TEXT, `NUM` TEXT, `STAKENUMBER` TEXT, `NAME` TEXT, `STRUCTURE_TYPE` TEXT, `PHOTO_NUM` TEXT, `ID` TEXT NOT NULL, `SOURCE` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `PROJECT_NUMBER` TEXT, `PROJECT_NAME` TEXT, `PIPELINE_NUMBER` TEXT, `PIPELINE_NAME` TEXT, `SECTION_NUMBER` TEXT, `SECTION_NAME` TEXT, `SEGMENT_CROSS_NUMBER` TEXT, `SEGMENT_CROSS_NAME` TEXT, `RELATIVE_MILEAGE` TEXT, `PROTECT_NUM` TEXT, `PROTECT_NAME` TEXT, `PROTECT_TYPE` TEXT, `MATERIAL_TYPE` TEXT, `STRUCTUR_ESIZE` TEXT, `ENGINEER_QUATITY` TEXT, `ACCEPT_DATE` TEXT, `CONCLUSION` TEXT, `CONSTRUCTION_UNIT_ID` TEXT, `WELDING_UNIT_ID` TEXT, `WELDING_UNIT_NAME` TEXT, `SUPERVISION_UNIT_ID` TEXT, `SUPERVISION_ENGINEER` TEXT, `COLLECTION_PERSON2` TEXT, `COLLECTION_DATE` TEXT, `PHOTO_PATH` TEXT, `APPROVE_STATUS` TEXT, `CREATE_USER_ID` TEXT, `status` INTEGER NOT NULL, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "subprojectNumber",
+            "columnName": "SUBPROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectUnitNumber",
+            "columnName": "PROJECT_UNIT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "functionalAreaCode",
+            "columnName": "FUNCTIONAL_AREA_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "section",
+            "columnName": "SECTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "branchengineeringNumber",
+            "columnName": "BRANCHENGINEERING_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "num",
+            "columnName": "NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stakenumber",
+            "columnName": "STAKENUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "structureType",
+            "columnName": "STRUCTURE_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "photoNum",
+            "columnName": "PHOTO_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "source",
+            "columnName": "SOURCE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNumber",
+            "columnName": "PROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectName",
+            "columnName": "PROJECT_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pipelineNumber",
+            "columnName": "PIPELINE_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pipelineName",
+            "columnName": "PIPELINE_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sectionNumber",
+            "columnName": "SECTION_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sectionName",
+            "columnName": "SECTION_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "segmentCrossNumber",
+            "columnName": "SEGMENT_CROSS_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "segmentCrossName",
+            "columnName": "SEGMENT_CROSS_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "relativeMileage",
+            "columnName": "RELATIVE_MILEAGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "protectNum",
+            "columnName": "PROTECT_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "protectName",
+            "columnName": "PROTECT_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "protectType",
+            "columnName": "PROTECT_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "materialType",
+            "columnName": "MATERIAL_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "structurEsize",
+            "columnName": "STRUCTUR_ESIZE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "engineerQuatity",
+            "columnName": "ENGINEER_QUATITY",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "acceptDate",
+            "columnName": "ACCEPT_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "conclusion",
+            "columnName": "CONCLUSION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionUnitId",
+            "columnName": "CONSTRUCTION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingUnitId",
+            "columnName": "WELDING_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingUnitName",
+            "columnName": "WELDING_UNIT_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionUnitId",
+            "columnName": "SUPERVISION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionEngineer",
+            "columnName": "SUPERVISION_ENGINEER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionPerson2",
+            "columnName": "COLLECTION_PERSON2",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionDate",
+            "columnName": "COLLECTION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "photoPath",
+            "columnName": "PHOTO_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approveStatus",
+            "columnName": "APPROVE_STATUS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_MARK_STAKE",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`FUNCTIONAL_AREA_CODE` TEXT, `PROJECT_UNIT_NUMBER` TEXT, `CROSSING_CODE` TEXT, `BRANCHENGINEERING_NUMBER` TEXT, `MARK_STAKE_NAME` TEXT, `PHOTO_NUM` TEXT, `ELEVATION` TEXT, `CORNER_ANGLE` TEXT, `PHONE` TEXT, `TOP_ELEVATION` TEXT, `MARKER_SHAPE` TEXT, `LABEL_STATION` TEXT, `SUBPROJECT_NUMBER` TEXT, `SECTION` TEXT, `CREATE_USER_NAME` TEXT, `PHOTO_PATH` TEXT, `APPROVE_STATUS` TEXT, `SOURCE` TEXT, `ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `REMARK` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `PROJECT_NUMBER` TEXT, `PIPELINE_NUMBER` TEXT, `SECTION_NUMBER` TEXT, `SEGMENT_CROSS_NUMBER` TEXT, `MARK_STAKE_NUM` TEXT, `STAKE_STRUCTURE` TEXT, `BURIAL_DATE` TEXT, `EASTING` TEXT, `NORTHING` TEXT, `STAKENUMBER` TEXT, `RELATIVE_MILEAGE` TEXT, `STAKE_FUNCTION` TEXT, `BURIAL_DEPTH` TEXT, `CONSTRUCTION_UNIT_ID` TEXT, `SUPERVISION_UNIT_ID` TEXT, `SUPERVISION_ENGINEER` TEXT, `COLLECTION_PERSON` TEXT, `COLLECTION_DATE` TEXT, `status` INTEGER NOT NULL, `PROJECT_NAME` TEXT, `PIPELINE_NAME` TEXT, `SECTION_NAME` TEXT, `SEGMENT_CROSS_NAME` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "functionalAreaCode",
+            "columnName": "FUNCTIONAL_AREA_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectUnitNumber",
+            "columnName": "PROJECT_UNIT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingCode",
+            "columnName": "CROSSING_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "branchengineeringNumber",
+            "columnName": "BRANCHENGINEERING_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "markStakeName",
+            "columnName": "MARK_STAKE_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "photoNum",
+            "columnName": "PHOTO_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "elevation",
+            "columnName": "ELEVATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cornerAngle",
+            "columnName": "CORNER_ANGLE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phone",
+            "columnName": "PHONE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "topElevation",
+            "columnName": "TOP_ELEVATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "markerShape",
+            "columnName": "MARKER_SHAPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "labelStation",
+            "columnName": "LABEL_STATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subprojectNumber",
+            "columnName": "SUBPROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "section",
+            "columnName": "SECTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "photoPath",
+            "columnName": "PHOTO_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approveStatus",
+            "columnName": "APPROVE_STATUS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "source",
+            "columnName": "SOURCE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNumber",
+            "columnName": "PROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pipelineNumber",
+            "columnName": "PIPELINE_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sectionNumber",
+            "columnName": "SECTION_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "segmentCrossNumber",
+            "columnName": "SEGMENT_CROSS_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "markStakeNum",
+            "columnName": "MARK_STAKE_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stakeStructure",
+            "columnName": "STAKE_STRUCTURE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "burialDate",
+            "columnName": "BURIAL_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "easting",
+            "columnName": "EASTING",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "northing",
+            "columnName": "NORTHING",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stakenumber",
+            "columnName": "STAKENUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "relativeMileage",
+            "columnName": "RELATIVE_MILEAGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stakeFunction",
+            "columnName": "STAKE_FUNCTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "burialDepth",
+            "columnName": "BURIAL_DEPTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionUnitId",
+            "columnName": "CONSTRUCTION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionUnitId",
+            "columnName": "SUPERVISION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionEngineer",
+            "columnName": "SUPERVISION_ENGINEER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionPerson",
+            "columnName": "COLLECTION_PERSON",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionDate",
+            "columnName": "COLLECTION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "projectName",
+            "columnName": "PROJECT_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pipelineName",
+            "columnName": "PIPELINE_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sectionName",
+            "columnName": "SECTION_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "segmentCrossName",
+            "columnName": "SEGMENT_CROSS_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_WARNING_SIGN",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`PHONE` TEXT, `HEIGHT` TEXT, `MARKER_SHAPE` TEXT, `SECTION` TEXT, `STAKE_FUNCTION` TEXT, `NORTHING` TEXT, `ELEVATION` TEXT, `STAKENUMBER` TEXT, `EASTING` TEXT, `PHOTO_NUM` TEXT, `WARNING_SIGN_NAME` TEXT, `BRANCHENGINEERING_NUMBER` TEXT, `CROSSING_CODE` TEXT, `FUNCTIONAL_AREA_CODE` TEXT, `PROJECT_UNIT_NUMBER` TEXT, `SUBPROJECT_NUMBER` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `CREATE_TIME` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_USER_ID` TEXT, `ID` TEXT NOT NULL, `SOURCE` TEXT, `APPROVE_STATUS` TEXT, `PHOTO_PATH` TEXT, `REMARK` TEXT, `ACTIVE` TEXT, `PROJECT_NUMBER` TEXT, `PIPELINE_NUMBER` TEXT, `SECTION_NUMBER` TEXT, `SEGMENT_CROSS_NUMBER` TEXT, `WARNING_SIGN_NUM` TEXT, `WARNING_SIGN_STRUCTURE` TEXT, `BURIAL_DATE` TEXT, `RELATIVE_MILEAGE` TEXT, `DISTRICT` TEXT, `CONSTRUCTION_UNIT_ID` TEXT, `SUPERVISION_UNIT_ID` TEXT, `SUPERVISION_ENGINEER` TEXT, `COLLECTION_PERSON` TEXT, `COLLECTION_DATE` TEXT, `status` INTEGER NOT NULL, `PROJECT_NAME` TEXT, `PIPELINE_NAME` TEXT, `SECTION_NAME` TEXT, `SEGMENT_CROSS_NAME` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "phone",
+            "columnName": "PHONE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "height",
+            "columnName": "HEIGHT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "markerShape",
+            "columnName": "MARKER_SHAPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "section",
+            "columnName": "SECTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stakeFunction",
+            "columnName": "STAKE_FUNCTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "northing",
+            "columnName": "NORTHING",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "elevation",
+            "columnName": "ELEVATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stakenumber",
+            "columnName": "STAKENUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "easting",
+            "columnName": "EASTING",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "photoNum",
+            "columnName": "PHOTO_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "warningSignName",
+            "columnName": "WARNING_SIGN_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "branchengineeringNumber",
+            "columnName": "BRANCHENGINEERING_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingCode",
+            "columnName": "CROSSING_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "functionalAreaCode",
+            "columnName": "FUNCTIONAL_AREA_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectUnitNumber",
+            "columnName": "PROJECT_UNIT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subprojectNumber",
+            "columnName": "SUBPROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "source",
+            "columnName": "SOURCE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approveStatus",
+            "columnName": "APPROVE_STATUS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "photoPath",
+            "columnName": "PHOTO_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNumber",
+            "columnName": "PROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pipelineNumber",
+            "columnName": "PIPELINE_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sectionNumber",
+            "columnName": "SECTION_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "segmentCrossNumber",
+            "columnName": "SEGMENT_CROSS_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "warningSignNum",
+            "columnName": "WARNING_SIGN_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "warningSignStructure",
+            "columnName": "WARNING_SIGN_STRUCTURE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "burialDate",
+            "columnName": "BURIAL_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "relativeMileage",
+            "columnName": "RELATIVE_MILEAGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "district",
+            "columnName": "DISTRICT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionUnitId",
+            "columnName": "CONSTRUCTION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionUnitId",
+            "columnName": "SUPERVISION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionEngineer",
+            "columnName": "SUPERVISION_ENGINEER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionPerson",
+            "columnName": "COLLECTION_PERSON",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionDate",
+            "columnName": "COLLECTION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "projectName",
+            "columnName": "PROJECT_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pipelineName",
+            "columnName": "PIPELINE_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sectionName",
+            "columnName": "SECTION_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "segmentCrossName",
+            "columnName": "SEGMENT_CROSS_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_HDD_CRO",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `PHOTO_PATH` TEXT, `SECTION` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `CREATE_USER_ID` TEXT, `APPROVE_STATUS` TEXT, `SOURCE` TEXT, `PROJECT_NUMBER` TEXT, `SUBPROJECT_NUMBER` TEXT, `PROJECT_UNIT_NUMBER` TEXT, `FUNCTIONAL_AREA_CODE` TEXT, `CROSSING_CODE` TEXT, `CROSSING_NAME` TEXT, `CATEGORY` TEXT, `BRANCHENGINEERING_NUMBER` TEXT, `INITIAL_STAKE_NUMBER` TEXT, `INITIAL_RELATIVE_MILEAGE` TEXT, `END_STAKE_NUMBER` TEXT, `END_RELATIVE_MILEAGE` TEXT, `EASTING_OF_START_POINT` TEXT, `NORTHING_OF_START_POINT` TEXT, `EASTING_OF_END_POINT` TEXT, `NORTHING_OF_END_POINT` TEXT, `COMMENCEMENT_DATE` TEXT, `COMPLETION_DATE` TEXT, `CONSTRUCTION_UNIT_ID` TEXT, `SUPERVISION_UNIT_ID` TEXT, `COLLECTION_PERSON` TEXT, `SUPERVISION_ENGINEER` TEXT, `COLLECTION_DATE` TEXT, `status` INTEGER NOT NULL, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "photoPath",
+            "columnName": "PHOTO_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "section",
+            "columnName": "SECTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approveStatus",
+            "columnName": "APPROVE_STATUS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "source",
+            "columnName": "SOURCE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNumber",
+            "columnName": "PROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subprojectNumber",
+            "columnName": "SUBPROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectUnitNumber",
+            "columnName": "PROJECT_UNIT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "functionalAreaCode",
+            "columnName": "FUNCTIONAL_AREA_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingCode",
+            "columnName": "CROSSING_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingName",
+            "columnName": "CROSSING_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "CATEGORY",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "branchengineeringNumber",
+            "columnName": "BRANCHENGINEERING_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "initialStakeNumber",
+            "columnName": "INITIAL_STAKE_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "initialRelativeMileage",
+            "columnName": "INITIAL_RELATIVE_MILEAGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "endStakeNumber",
+            "columnName": "END_STAKE_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "endRelativeMileage",
+            "columnName": "END_RELATIVE_MILEAGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "eastingOfStartPoint",
+            "columnName": "EASTING_OF_START_POINT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "northingOfStartPoint",
+            "columnName": "NORTHING_OF_START_POINT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "eastingOfEndPoint",
+            "columnName": "EASTING_OF_END_POINT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "northingOfEndPoint",
+            "columnName": "NORTHING_OF_END_POINT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "commencementDate",
+            "columnName": "COMMENCEMENT_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "completionDate",
+            "columnName": "COMPLETION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionUnitId",
+            "columnName": "CONSTRUCTION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionUnitId",
+            "columnName": "SUPERVISION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionPerson",
+            "columnName": "COLLECTION_PERSON",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionEngineer",
+            "columnName": "SUPERVISION_ENGINEER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionDate",
+            "columnName": "COLLECTION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_COATING_REPAIR",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `APPROVE_STATUS` TEXT, `PROJECT_NUMBER` TEXT, `SUBPROJECT_NUMBER` TEXT, `PROJECT_UNIT_NUMBER` TEXT, `FUNCTIONAL_AREA_CODE` TEXT, `CROSSING_CODE` TEXT, `BRANCHENGINEERING_NUMBER` TEXT, `SUPERVISION_UNIT_ID` TEXT, `SUPERVISION_ENGINEER` TEXT, `COLLECTION_PERSON` TEXT, `COLLECTION_DATE` TEXT, `WELD_NUM` TEXT, `RELATIVE_WELD_POSITION` TEXT, `CLOCK_DIRECTION` TEXT, `COATING_REPAIR_MATERIAL` TEXT, `COATING_REPAIR_TYPE` TEXT, `DETECTION_VOLTAGE` TEXT, `CONSTRUCTION_DATE` TEXT, `CONSTRUCTION_UNIT_ID` TEXT, `SECTION` TEXT, `status` INTEGER NOT NULL, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approveStatus",
+            "columnName": "APPROVE_STATUS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNumber",
+            "columnName": "PROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subprojectNumber",
+            "columnName": "SUBPROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectUnitNumber",
+            "columnName": "PROJECT_UNIT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "functionalAreaCode",
+            "columnName": "FUNCTIONAL_AREA_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingCode",
+            "columnName": "CROSSING_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "branchengineeringNumber",
+            "columnName": "BRANCHENGINEERING_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionUnitId",
+            "columnName": "SUPERVISION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionEngineer",
+            "columnName": "SUPERVISION_ENGINEER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionPerson",
+            "columnName": "COLLECTION_PERSON",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionDate",
+            "columnName": "COLLECTION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldNum",
+            "columnName": "WELD_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "relativeWeldPosition",
+            "columnName": "RELATIVE_WELD_POSITION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "clockDirection",
+            "columnName": "CLOCK_DIRECTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "coatingRepairMaterial",
+            "columnName": "COATING_REPAIR_MATERIAL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "coatingRepairType",
+            "columnName": "COATING_REPAIR_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "detectionVoltage",
+            "columnName": "DETECTION_VOLTAGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionDate",
+            "columnName": "CONSTRUCTION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionUnitId",
+            "columnName": "CONSTRUCTION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "section",
+            "columnName": "SECTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_JOINT_COATING",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `APPROVE_STATUS` TEXT, `PROJECT_NUMBER` TEXT, `SUBPROJECT_NUMBER` TEXT, `PROJECT_UNIT_NUMBER` TEXT, `FUNCTIONAL_AREA_CODE` TEXT, `CROSSING_CODE` TEXT, `BRANCHENGINEERING_NUMBER` TEXT, `SUPERVISION_UNIT_ID` TEXT, `SUPERVISION_ENGINEER` TEXT, `COLLECTION_PERSON` TEXT, `COLLECTION_DATE` TEXT, `WELD_NUM` TEXT, `COATING_DATE` TEXT, `COATING_TYPE` TEXT, `COATING_GRADE` TEXT, `COATING_METERIAL_BATCH` TEXT, `DERUSTING_GRADE` TEXT, `PRIMER_MATERIAL` TEXT, `PRETEMPERATURE` TEXT, `FIRING_TEMPERATURE` TEXT, `SECTION` TEXT, `CONSTRUCTION_UNIT_ID` TEXT, `status` INTEGER NOT NULL, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approveStatus",
+            "columnName": "APPROVE_STATUS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNumber",
+            "columnName": "PROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subprojectNumber",
+            "columnName": "SUBPROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectUnitNumber",
+            "columnName": "PROJECT_UNIT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "functionalAreaCode",
+            "columnName": "FUNCTIONAL_AREA_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingCode",
+            "columnName": "CROSSING_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "branchengineeringNumber",
+            "columnName": "BRANCHENGINEERING_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionUnitId",
+            "columnName": "SUPERVISION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionEngineer",
+            "columnName": "SUPERVISION_ENGINEER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionPerson",
+            "columnName": "COLLECTION_PERSON",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionDate",
+            "columnName": "COLLECTION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldNum",
+            "columnName": "WELD_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "coatingDate",
+            "columnName": "COATING_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "coatingType",
+            "columnName": "COATING_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "coatingGrade",
+            "columnName": "COATING_GRADE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "coatingMeterialBatch",
+            "columnName": "COATING_METERIAL_BATCH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "derustingGrade",
+            "columnName": "DERUSTING_GRADE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "primerMaterial",
+            "columnName": "PRIMER_MATERIAL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pretemperature",
+            "columnName": "PRETEMPERATURE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "firingTemperature",
+            "columnName": "FIRING_TEMPERATURE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "section",
+            "columnName": "SECTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionUnitId",
+            "columnName": "CONSTRUCTION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_REWORK_WELD_JOINT",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `APPROVE_STATUS` TEXT, `PROJECT_NUMBER` TEXT, `SUBPROJECT_NUMBER` TEXT, `PROJECT_UNIT_NUMBER` TEXT, `FUNCTIONAL_AREA_CODE` TEXT, `CROSSING_CODE` TEXT, `BRANCHENGINEERING_NUMBER` TEXT, `SUPERVISION_UNIT_ID` TEXT, `SUPERVISION_ENGINEER` TEXT, `COLLECTION_PERSON` TEXT, `COLLECTION_DATE` TEXT, `REWORK_WELD_JOINT_NUM` TEXT, `NEW_WELD_JOINT_NUM` TEXT, `REWORK_SUBJECT` TEXT, `WELD_ROD_BATCH_NUM` TEXT, `WIRE_BATCH_NUM` TEXT, `WELDING_PROCEDURE` TEXT, `WELDER_ID` TEXT, `WELD_DATE` TEXT, `CONSTRUCTION_UNIT_ID` TEXT, `WELDING_UNIT_ID` TEXT, `SECTION` TEXT, `status` INTEGER NOT NULL, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approveStatus",
+            "columnName": "APPROVE_STATUS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNumber",
+            "columnName": "PROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subprojectNumber",
+            "columnName": "SUBPROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectUnitNumber",
+            "columnName": "PROJECT_UNIT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "functionalAreaCode",
+            "columnName": "FUNCTIONAL_AREA_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingCode",
+            "columnName": "CROSSING_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "branchengineeringNumber",
+            "columnName": "BRANCHENGINEERING_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionUnitId",
+            "columnName": "SUPERVISION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionEngineer",
+            "columnName": "SUPERVISION_ENGINEER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionPerson",
+            "columnName": "COLLECTION_PERSON",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionDate",
+            "columnName": "COLLECTION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "reworkWeldJointNum",
+            "columnName": "REWORK_WELD_JOINT_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "newWeldJointNum",
+            "columnName": "NEW_WELD_JOINT_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "reworkSubject",
+            "columnName": "REWORK_SUBJECT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldRodBatchNum",
+            "columnName": "WELD_ROD_BATCH_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wireBatchNum",
+            "columnName": "WIRE_BATCH_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingProcedure",
+            "columnName": "WELDING_PROCEDURE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "welderId",
+            "columnName": "WELDER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldDate",
+            "columnName": "WELD_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionUnitId",
+            "columnName": "CONSTRUCTION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingUnitId",
+            "columnName": "WELDING_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "section",
+            "columnName": "SECTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_WELDING_UNIT",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARD` TEXT, `PROJECT_NUMBER` TEXT, `CONSTRUCTION_UNIT_ID` TEXT, `WELDING_UNIT_ID` TEXT, `WELDING_UNIT_NAME` TEXT, `WELDING_UNIT_TYPE` TEXT, `status` INTEGER NOT NULL, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remard",
+            "columnName": "REMARD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNumber",
+            "columnName": "PROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionUnitId",
+            "columnName": "CONSTRUCTION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingUnitId",
+            "columnName": "WELDING_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingUnitName",
+            "columnName": "WELDING_UNIT_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingUnitType",
+            "columnName": "WELDING_UNIT_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_WELD_JOINT",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `APPROVE_STATUS` TEXT, `PROJECT_NUMBER` TEXT, `SUBPROJECT_NUMBER` TEXT, `PROJECT_UNIT_NUMBER` TEXT, `FUNCTIONAL_AREA_CODE` TEXT, `CROSSING_CODE` TEXT, `BRANCHENGINEERING_NUMBER` TEXT, `SUPERVISION_UNIT_ID` TEXT, `SUPERVISION_ENGINEER` TEXT, `COLLECTION_PERSON` TEXT, `COLLECTION_DATE` TEXT, `WELD_JOINT_NUM` TEXT, `WELD_JOINT_TYPE` TEXT, `WELDING_JOINT_TYPE` TEXT, `STAKE_NUMBER` TEXT, `RELATIVE_MILEAGE` TEXT, `FRONT_PIPE_NUM` TEXT, `BACK_PIPE_NUM` TEXT, `WIRE_BATCH_NUM` TEXT, `WELD_ROD_BATCH_NUM` TEXT, `WELDING_PROCEDURE` TEXT, `WELDER_Id` TEXT, `CONSTRUCTION_DATE` TEXT, `CONSTRUCTION_UNIT_ID` TEXT, `WELDING_UNIT_ID` TEXT, `SECTION` TEXT, `status` INTEGER NOT NULL, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approveStatus",
+            "columnName": "APPROVE_STATUS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNumber",
+            "columnName": "PROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subprojectNumber",
+            "columnName": "SUBPROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectUnitNumber",
+            "columnName": "PROJECT_UNIT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "functionalAreaCode",
+            "columnName": "FUNCTIONAL_AREA_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingCode",
+            "columnName": "CROSSING_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "branchengineeringNumber",
+            "columnName": "BRANCHENGINEERING_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionUnitId",
+            "columnName": "SUPERVISION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionEngineer",
+            "columnName": "SUPERVISION_ENGINEER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionPerson",
+            "columnName": "COLLECTION_PERSON",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionDate",
+            "columnName": "COLLECTION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldJointNum",
+            "columnName": "WELD_JOINT_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldJointType",
+            "columnName": "WELD_JOINT_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingJointType",
+            "columnName": "WELDING_JOINT_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stakenumber",
+            "columnName": "STAKE_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "relativeMileage",
+            "columnName": "RELATIVE_MILEAGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "frontPipeNum",
+            "columnName": "FRONT_PIPE_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "backPipeNum",
+            "columnName": "BACK_PIPE_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wireBatchNum",
+            "columnName": "WIRE_BATCH_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldRodBatchNum",
+            "columnName": "WELD_ROD_BATCH_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingProcedure",
+            "columnName": "WELDING_PROCEDURE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "welderId",
+            "columnName": "WELDER_Id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionDate",
+            "columnName": "CONSTRUCTION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionUnitId",
+            "columnName": "CONSTRUCTION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingUnitId",
+            "columnName": "WELDING_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "section",
+            "columnName": "SECTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_Welding_PROCEDURE",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARD` TEXT, `PROJECT_NUMBER` TEXT, `WELDING_PROCEDURE_NUM` TEXT, `WELDING_PROCEDURE_NAME` TEXT, `APPLICABLE_TYPE` TEXT, `WELDING_METHOD` TEXT, `DIAMETER` TEXT, `WALL_THICKNESS` TEXT, `status` INTEGER NOT NULL, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remard",
+            "columnName": "REMARD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNumber",
+            "columnName": "PROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingProcedureNum",
+            "columnName": "WELDING_PROCEDURE_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingProcedureName",
+            "columnName": "WELDING_PROCEDURE_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "applicableType",
+            "columnName": "APPLICABLE_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingMethod",
+            "columnName": "WELDING_METHOD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "diameter",
+            "columnName": "DIAMETER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wallThickness",
+            "columnName": "WALL_THICKNESS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_STATION",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARD` TEXT, `STATION_NAME` TEXT, `STATION_NUMBER` TEXT, `HOLE_TYPE` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remard",
+            "columnName": "REMARD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stationName",
+            "columnName": "STATION_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stationNumber",
+            "columnName": "STATION_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "holeType",
+            "columnName": "HOLE_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_VALVEROOM",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARD` TEXT, `VALVEROOM_NUMBER` TEXT, `VALVEROOM_NAME` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remard",
+            "columnName": "REMARD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "valveNumber",
+            "columnName": "VALVEROOM_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "valveroomName",
+            "columnName": "VALVEROOM_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_WELDER",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARD` TEXT, `PROJECT_NUMBER` TEXT, `CONSTRUCTION_UNIT_ID` TEXT, `WELDING_UNIT_ID` TEXT, `WELD_ID` TEXT, `WELDER_NAME` TEXT, `NAME` TEXT, `ID_CARD` TEXT, `CERTIFICATE_NUM` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remard",
+            "columnName": "REMARD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNumber",
+            "columnName": "PROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionUnitId",
+            "columnName": "CONSTRUCTION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weldingUnitId",
+            "columnName": "WELDING_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "welderId",
+            "columnName": "WELD_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "welderName",
+            "columnName": "WELDER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idCard",
+            "columnName": "ID_CARD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "certificateNum",
+            "columnName": "CERTIFICATE_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_ANDROID_ERROR",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_NAME` TEXT, `CREATE_USER_ID` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `CREATE_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `ERRORLOG` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "errorLog",
+            "columnName": "ERRORLOG",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_ANDROID_UPDATE",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_NAME` TEXT, `CREATE_USER_ID` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `CREATE_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `LAST_VERSION` TEXT, `DOWNLOAD_PATH` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastVersion",
+            "columnName": "LAST_VERSION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "downLoadPath",
+            "columnName": "DOWNLOAD_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "M_ENTITY_UNIT",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `PRO_UNIT_NUM` TEXT, `PRO_UNIT_NAME` TEXT, `DESCRIPTION` TEXT, `ONE_PROJECT_ID` TEXT, `CATEGORY` TEXT, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "proUnitNum",
+            "columnName": "PRO_UNIT_NUM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "proUnitName",
+            "columnName": "PRO_UNIT_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "oneProjectId",
+            "columnName": "ONE_PROJECT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "CATEGORY",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "C_TRUSS_AERIAL_CRO",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `PHOTO_PATH` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `CREATE_USER_ID` TEXT, `APPROVE_STATUS` TEXT, `SOURCE` TEXT, `PROJECT_NUMBER` TEXT, `SUBPROJECT_NUMBER` TEXT, `PROJECT_UNIT_NUMBER` TEXT, `FUNCTIONAL_AREA_CODE` TEXT, `BRANCHENGINEERING_NUMBER` TEXT, `PIPELINE_NUMBER` TEXT, `SECTION_NUMBER` TEXT, `CROSSING_NUMBER` TEXT, `CROSSING_NAME` TEXT, `CROSSING_CODE` TEXT, `CATEGORY` TEXT, `INITIAL_STAKE_NUMBER` TEXT, `INITIAL_RELATIVE_MILEAGE` TEXT, `END_STAKE_NUMBER` TEXT, `END_RELATIVE_MILEAGE` TEXT, `EASTING_OF_START_POINT` TEXT, `NORTHING_OF_START_POINT` TEXT, `EASTING_OF_END_POINT` TEXT, `NORTHING_OF_END_POINT` TEXT, `OPEN_CUT` TEXT, `CROSSING_LENGTH` TEXT, `COMMENCEMENT_DATE` TEXT, `COMPLETION_DATE` TEXT, `CONSTRUCTION_UNIT_ID` TEXT, `SUPERVISION_UNIT_ID` TEXT, `COLLECTION_PERSON` TEXT, `SUPERVISION_ENGINEER` TEXT, `COLLECTION_DATE` TEXT, `status` INTEGER NOT NULL, `SECTION` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "photoPath",
+            "columnName": "PHOTO_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approveStatus",
+            "columnName": "APPROVE_STATUS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "source",
+            "columnName": "SOURCE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectNumber",
+            "columnName": "PROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subprojectNumber",
+            "columnName": "SUBPROJECT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "projectUnitNumber",
+            "columnName": "PROJECT_UNIT_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "functionalAreaCode",
+            "columnName": "FUNCTIONAL_AREA_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "branchengineeringNumber",
+            "columnName": "BRANCHENGINEERING_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pipelineNumber",
+            "columnName": "PIPELINE_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sectionNumber",
+            "columnName": "SECTION_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingNumber",
+            "columnName": "CROSSING_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingName",
+            "columnName": "CROSSING_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingCode",
+            "columnName": "CROSSING_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "CATEGORY",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "initialStakeNumber",
+            "columnName": "INITIAL_STAKE_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "initialRelativeMileage",
+            "columnName": "INITIAL_RELATIVE_MILEAGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "endStakeNumber",
+            "columnName": "END_STAKE_NUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "endRelativeMileage",
+            "columnName": "END_RELATIVE_MILEAGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "eastingOfStartPoint",
+            "columnName": "EASTING_OF_START_POINT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "northingOfStartPoint",
+            "columnName": "NORTHING_OF_START_POINT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "eastingOfEndPoint",
+            "columnName": "EASTING_OF_END_POINT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "northingOfEndPoint",
+            "columnName": "NORTHING_OF_END_POINT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "openCut",
+            "columnName": "OPEN_CUT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "crossingLength",
+            "columnName": "CROSSING_LENGTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "commencementDate",
+            "columnName": "COMMENCEMENT_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "completionDate",
+            "columnName": "COMPLETION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constructionUnitId",
+            "columnName": "CONSTRUCTION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionUnitId",
+            "columnName": "SUPERVISION_UNIT_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionPerson",
+            "columnName": "COLLECTION_PERSON",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supervisionEngineer",
+            "columnName": "SUPERVISION_ENGINEER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "collectionDate",
+            "columnName": "COLLECTION_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "section",
+            "columnName": "SECTION",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"5d010e5b976460ae11b5ea426feb6813\")"
+    ]
+  }
+}

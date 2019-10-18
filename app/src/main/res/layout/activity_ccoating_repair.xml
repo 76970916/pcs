@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="java.lang.Double" />
+
+        <variable
+            name="presenter"
+            type="com.spe.dcs.project.ccoatingrepair.CCoatingRepairActivity.Presenter" />
+
+        <variable
+            name="sysUserEntity"
+            type="com.spe.dcs.system.sysuser.SysUserEntity" />
+
+        <variable
+            name="cCoatingRepairEntity"
+            type="com.spe.dcs.project.ccoatingrepair.CCoatingRepairEntity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/login_scroller"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/padding_lv2"
+            android:layout_marginBottom="@dimen/padding_lv2"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/short_white_bg"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_projectNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/cCoatingRepair_projectNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_subprojectNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/cCoatingRepair_subprojectNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_projectUnitNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/cCoatingRepair_projectUnitNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_functionalAreaCode"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/cCoatingRepair_functionalAreaCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_section"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/cCoatingRepair_section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_crossingCode"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <EditText
+                        android:id="@+id/cCoatingRepair_crossingCode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@={cCoatingRepairEntity.crossingCode}"></EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_branchengineeringNumber"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <EditText
+                        android:id="@+id/cCoatingRepair_branchengineeringNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@={cCoatingRepairEntity.branchengineeringNumber}"></EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/cCoatingRepair_collectionDate"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <TextView
+                        android:id="@+id/cCoatingRepair_collectionDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/ic_date_range_black_36dp"
+                        android:gravity="center"
+                        android:onClick="@{presenter::date_click}"
+                        android:paddingLeft="@dimen/padding_lv2"
+                        android:paddingRight="@dimen/padding_lv2"
+                        android:text="@={cCoatingRepairEntity.collectionDate}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_weldNum"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cCoatingRepair_weldNum"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@={cCoatingRepairEntity.weldNum}"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_relativeWeldPosition"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cCoatingRepair_relativeWeldPosition"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@={cCoatingRepairEntity.relativeWeldPosition}"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_clockDirection"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cCoatingRepair_clockDirection"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@={cCoatingRepairEntity.clockDirection}"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_coatingRepairMaterial"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cCoatingRepair_coatingRepairMaterial"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@={cCoatingRepairEntity.coatingRepairMaterial}"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_coatingRepairType"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cCoatingRepair_coatingRepairType"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@={cCoatingRepairEntity.coatingRepairType}"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_detectionVoltage"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cCoatingRepair_detectionVoltage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@={cCoatingRepairEntity.detectionVoltage}"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/cCoatingRepair_constructionDate"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <TextView
+                        android:id="@+id/cCoatingRepair_constructionDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/ic_date_range_black_36dp"
+                        android:gravity="center"
+                        android:onClick="@{presenter::date_click}"
+                        android:paddingLeft="@dimen/padding_lv2"
+                        android:paddingRight="@dimen/padding_lv2"
+                        android:text="@={cCoatingRepairEntity.constructionDate}"
+                        android:textColor="@color/black_light_e"
+                        android:textSize="@dimen/tv_6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_supervisionEngineer"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+
+                    <EditText
+                        android:id="@+id/cCoatingRepair_supervisionEngineer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@={cCoatingRepairEntity.supervisionEngineer}"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cCoatingRepair_supervisionUnitId"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/padding_lv2"
+                            android:text="*"
+                            android:textColor="@color/red_deep" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/cCoatingRepair_supervisionUnitId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"></Spinner>
+                    </LinearLayout>
+                </LinearLayout>
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/bt_height"-->
+<!--                    android:layout_marginLeft="@dimen/padding_lv2"-->
+<!--                    android:layout_marginRight="@dimen/padding_lv2"-->
+<!--                    android:background="@drawable/short_activity_bg"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="1">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:text="@string/cCoatingRepair_approveStatus"-->
+<!--                            android:textColor="@color/black_light_e"-->
+<!--                            android:textSize="@dimen/tv_6" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginRight="@dimen/padding_lv2"-->
+<!--                            android:text="*"-->
+<!--                            android:textColor="@color/red_deep"-->
+<!--                            android:visibility="gone" />-->
+<!--                    </RelativeLayout>-->
+
+<!--                    <View-->
+<!--                        android:layout_width="1dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@color/gray_9" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/cCoatingRepair_approveStatus"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:background="@null"-->
+<!--                        android:gravity="center"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:text="@={cCoatingRepairEntity.approveStatus}"></TextView>-->
+<!--                </LinearLayout>-->
+
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_height"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bt_middler_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_bg"
+                android:gravity="center"
+                android:onClick="@{presenter :: list_click}"
+                android:text="@string/list_"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_6" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bt_middler_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_bg"
+                android:gravity="center"
+                android:onClick="@{presenter ::save_click}"
+                android:text="@string/saves"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_6" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bt_middler_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_bg"
+                android:gravity="center"
+                android:onClick="@{presenter ::again_click}"
+                android:text="@string/again"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tv_6" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

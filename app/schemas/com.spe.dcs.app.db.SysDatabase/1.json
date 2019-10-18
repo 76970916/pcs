@@ -1,0 +1,1995 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "d3dd96c6ba4c26371479b776841ca8a0",
+    "entities": [
+      {
+        "tableName": "SYS_USER",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `USER_CODE` TEXT, `CODE` TEXT, `SORT` TEXT, `NAME` TEXT, `WORKNO` TEXT, `PASSWORD` TEXT, `SEX` TEXT, `DESCRIPTION` TEXT, `INDATE` TEXT, `OUTDATE` TEXT, `PHONE` TEXT, `MOBILEPHONE` TEXT, `EMAIL` TEXT, `ADDRESS` TEXT, `SORTINDEX` TEXT, `LASTLOGINTIME` TEXT, `LASTLOGINIP` TEXT, `LASTSESSIONID` TEXT, `ERRORCOUNT` TEXT, `ERRORTIME` TEXT, `ISDELETED` TEXT, `DELETETIME` TEXT, `PRJID` TEXT, `PRJNAME` TEXT, `DEPTID` TEXT, `DEPTFULLID` TEXT, `DEPTNAME` TEXT, `RTX` TEXT, `MODIFYTIME` TEXT, `WEIXIN` TEXT, `SIGNPWD` TEXT, `ISSHOW` TEXT, `CORPID` TEXT, `CORPNAME` TEXT, `NAMEEN` TEXT, `PORTALSETTINGS` TEXT, `CREATE_USER_ID` TEXT, `CREATE_USER_NAME` TEXT, `CREATE_TIME` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `UNIFIED_ACCOUNT` TEXT, `ORG_ID` TEXT, `ORG_NAME` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userCode",
+            "columnName": "USER_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sort",
+            "columnName": "SORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "workno",
+            "columnName": "WORKNO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "password",
+            "columnName": "PASSWORD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sex",
+            "columnName": "SEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "indate",
+            "columnName": "INDATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "outdate",
+            "columnName": "OUTDATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phone",
+            "columnName": "PHONE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mobilephone",
+            "columnName": "MOBILEPHONE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "EMAIL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "address",
+            "columnName": "ADDRESS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortindex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastlogintime",
+            "columnName": "LASTLOGINTIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastloginip",
+            "columnName": "LASTLOGINIP",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastsessionid",
+            "columnName": "LASTSESSIONID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "errorcount",
+            "columnName": "ERRORCOUNT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "errortime",
+            "columnName": "ERRORTIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isdeleted",
+            "columnName": "ISDELETED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "deletetime",
+            "columnName": "DELETETIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "prjid",
+            "columnName": "PRJID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "prjname",
+            "columnName": "PRJNAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "deptid",
+            "columnName": "DEPTID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "deptfullid",
+            "columnName": "DEPTFULLID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "deptname",
+            "columnName": "DEPTNAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rtx",
+            "columnName": "RTX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifytime",
+            "columnName": "MODIFYTIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weixin",
+            "columnName": "WEIXIN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "signpwd",
+            "columnName": "SIGNPWD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isshow",
+            "columnName": "ISSHOW",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "corpid",
+            "columnName": "CORPID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "corpname",
+            "columnName": "CORPNAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nameen",
+            "columnName": "NAMEEN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "portalsettings",
+            "columnName": "PORTALSETTINGS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "unifiedAccount",
+            "columnName": "UNIFIED_ACCOUNT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "orgId",
+            "columnName": "ORG_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "orgName",
+            "columnName": "ORG_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_FIELD",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `TABLEID` TEXT, `CODE` TEXT, `NAME` TEXT, `TYPE` TEXT, `SORTINDEX` TEXT, `DESCRIPTION` TEXT, `LENGTH` TEXT, `LENGTH_SCALE` TEXT, `ISPRIMARYKEY` TEXT, `VALIDATERULE` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tableid",
+            "columnName": "TABLEID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortindex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "length",
+            "columnName": "LENGTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lengthScale",
+            "columnName": "LENGTH_SCALE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isprimarykey",
+            "columnName": "ISPRIMARYKEY",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "validaterule",
+            "columnName": "VALIDATERULE",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_TABLE",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CODE` TEXT, `NAME` TEXT, `SORTINDEX` TEXT, `DESCRIPTION` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortindex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_DOMAIN",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `TYPE` TEXT, `VAL` TEXT, `NAME` TEXT, `SORTINDEX` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "val",
+            "columnName": "VAL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortindex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_CATEGORY",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `PARENTID` TEXT, `FULLID` TEXT, `CODE` TEXT, `NAME` TEXT, `SORTINDEX` TEXT, `DESCRIPTION` TEXT, `CATEGORYCODE` TEXT, `ICONCLASS` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "parentid",
+            "columnName": "PARENTID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fullid",
+            "columnName": "FULLID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortindex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "categorycode",
+            "columnName": "CATEGORYCODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "iconclass",
+            "columnName": "ICONCLASS",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_ORG",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `PARENTID` TEXT, `FULLID` TEXT, `CODE` TEXT, `NAME` TEXT, `TYPE` TEXT, `SORTINDEX` TEXT, `DESCRIPTION` TEXT, `ISDELETED` TEXT, `DELETETIME` TEXT, `SHORTNAME` TEXT, `CHARACTER` TEXT, `LOCATION` TEXT, `ISSHOW` TEXT, `ISINDEPENDENTMANAGEMENT` TEXT, `NAMEEN` TEXT, `ISPRODUCE` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "parentid",
+            "columnName": "PARENTID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fullid",
+            "columnName": "FULLID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortindex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isdeleted",
+            "columnName": "ISDELETED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "deletetime",
+            "columnName": "DELETETIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "shortname",
+            "columnName": "SHORTNAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "character",
+            "columnName": "CHARACTER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "location",
+            "columnName": "LOCATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isshow",
+            "columnName": "ISSHOW",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isindependentmanagement",
+            "columnName": "ISINDEPENDENTMANAGEMENT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nameen",
+            "columnName": "NAMEEN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isproduce",
+            "columnName": "ISPRODUCE",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_LIST",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CODE` TEXT, `NAME` TEXT, `SQL` TEXT, `TABLENAMES` TEXT, `FITCOLUMNS` TEXT, `RESIZEHANDLE` TEXT, `RESIZEEDGE` TEXT, `AUTOROWHEIGHT` TEXT, `STRIPED` TEXT, `METHOD` TEXT, `NOWRAP` TEXT, `IDFIELD` TEXT, `URL` TEXT, `DATA` TEXT, `LOADMSG` TEXT, `EMPTYMSG` TEXT, `PAGINATION` TEXT, `ROWNUMBERS` TEXT, `SINGLESELECT` TEXT, `CTRLSELECT` TEXT, `CHECKONSELECT` TEXT, `SELECTONCHECK` TEXT, `SCROLLONSELECT` TEXT, `PAGEPOSITION` TEXT, `PAGENUMBER` TEXT, `PAGESIZE` TEXT, `PAGELIST` TEXT, `QUERYPARAMS` TEXT, `SORTNAME` TEXT, `SORTORDER` TEXT, `MULTISORT` TEXT, `REMOTESORT` TEXT, `SHOWHEADER` TEXT, `SHOWFOOTER` TEXT, `SCROLLBARSIZE` TEXT, `ROWNUMBERWIDTH` TEXT, `CATEGORYID` TEXT, `FIT` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sql",
+            "columnName": "SQL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tablenames",
+            "columnName": "TABLENAMES",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fitcolumns",
+            "columnName": "FITCOLUMNS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "resizehandle",
+            "columnName": "RESIZEHANDLE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "resizeedge",
+            "columnName": "RESIZEEDGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "autorowheight",
+            "columnName": "AUTOROWHEIGHT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "striped",
+            "columnName": "STRIPED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "method",
+            "columnName": "METHOD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nowrap",
+            "columnName": "NOWRAP",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "idfield",
+            "columnName": "IDFIELD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "URL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "data",
+            "columnName": "DATA",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "loadmsg",
+            "columnName": "LOADMSG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "emptymsg",
+            "columnName": "EMPTYMSG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pagination",
+            "columnName": "PAGINATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rownumbers",
+            "columnName": "ROWNUMBERS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "singleselect",
+            "columnName": "SINGLESELECT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ctrlselect",
+            "columnName": "CTRLSELECT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "checkonselect",
+            "columnName": "CHECKONSELECT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "selectoncheck",
+            "columnName": "SELECTONCHECK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "scrollonselect",
+            "columnName": "SCROLLONSELECT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pageposition",
+            "columnName": "PAGEPOSITION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pagenumber",
+            "columnName": "PAGENUMBER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pagesize",
+            "columnName": "PAGESIZE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pagelist",
+            "columnName": "PAGELIST",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "queryparams",
+            "columnName": "QUERYPARAMS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortname",
+            "columnName": "SORTNAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortorder",
+            "columnName": "SORTORDER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "multisort",
+            "columnName": "MULTISORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remotesort",
+            "columnName": "REMOTESORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "showheader",
+            "columnName": "SHOWHEADER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "showfooter",
+            "columnName": "SHOWFOOTER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "scrollbarsize",
+            "columnName": "SCROLLBARSIZE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rownumberwidth",
+            "columnName": "ROWNUMBERWIDTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "categoryid",
+            "columnName": "CATEGORYID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fit",
+            "columnName": "FIT",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_ANDROID_ERROR",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_NAME` TEXT, `CREATE_USER_ID` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `CREATE_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `ERRORLOG` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "errorLog",
+            "columnName": "ERRORLOG",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_ANDROID_UPDATE",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `CREATE_USER_NAME` TEXT, `CREATE_USER_ID` TEXT, `LAST_MODIFY_USER_ID` TEXT, `LAST_MODIFY_USER_NAME` TEXT, `LAST_MODIFY_TIME` TEXT, `CREATE_TIME` TEXT, `ACTIVE` TEXT, `REMARK` TEXT, `LAST_VERSION` TEXT, `DOWNLOAD_PATH` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createUserName",
+            "columnName": "CREATE_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createUserId",
+            "columnName": "CREATE_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserId",
+            "columnName": "LAST_MODIFY_USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyUserName",
+            "columnName": "LAST_MODIFY_USER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastModifyTime",
+            "columnName": "LAST_MODIFY_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createTime",
+            "columnName": "CREATE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "active",
+            "columnName": "ACTIVE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "REMARK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastVersion",
+            "columnName": "LAST_VERSION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "downLoadPath",
+            "columnName": "DOWNLOAD_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_FORM_FIELD",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `TABLEID` TEXT, `TABLECODE` TEXT, `TABLENAME` TEXT, `CODE` TEXT, `NAME` TEXT, `CTRLTYPE` TEXT, `FILEDTYPE` TEXT, `WIDTH` TEXT, `HEIGHT` TEXT, `TYPE` TEXT, `PANEL_WIDTH` TEXT, `PANEL_HEIGHT` TEXT, `PANEL_MIN_WIDTH` TEXT, `PANEL_MAX_WIDTH` TEXT, `PANEL_MIN_HEIGHT` TEXT, `PANEL_MAX_HEIGHT` TEXT, `PANEL_ALIGN` TEXT, `CLS` TEXT, `PROMPT` TEXT, `DEFAULTVALUE` TEXT, `MODETYPE` TEXT, `LABEL` TEXT, `LABEL_WIDTH` TEXT, `LABEL_POSITION` TEXT, `LABEL_ALIGN` TEXT, `MULTILINE` TEXT, `EDITABLE` TEXT, `DISABLED` TEXT, `READONLY` TEXT, `ICONS` TEXT, `ICON_CLS` TEXT, `ICON_ALIGN` TEXT, `ICON_WIDTH` TEXT, `BUTTON_TEXT` TEXT, `BUTTON_ICON` TEXT, `BUTTON_ALIGN` TEXT, `MULTIPLE` TEXT, `MULTIVALUE` TEXT, `REVERSED` TEXT, `SELECT_ON_NAVIGATION` TEXT, `SEPARATOR` TEXT, `HAS_DOWN_ARROW` TEXT, `DELAY` TEXT, `CURRENT_TEXT` TEXT, `CLOSE_TEXT` TEXT, `OK_TEXT` TEXT, `BUTTONS` TEXT, `SHARED_CALENDAR` TEXT, `MIN` TEXT, `MAX` TEXT, `PRECISION` TEXT, `DECIMAL_SEPARATOR` TEXT, `GROUP_SEPARATOR` TEXT, `PREFIX` TEXT, `SUFFIX` TEXT, `ACCEPT` TEXT, `REQUIRED` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tableId",
+            "columnName": "TABLEID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tableCode",
+            "columnName": "TABLECODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tableName",
+            "columnName": "TABLENAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ctrlType",
+            "columnName": "CTRLTYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "filedType",
+            "columnName": "FILEDTYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "width",
+            "columnName": "WIDTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "height",
+            "columnName": "HEIGHT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "panelWidth",
+            "columnName": "PANEL_WIDTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "panelHeight",
+            "columnName": "PANEL_HEIGHT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "panelMinWidth",
+            "columnName": "PANEL_MIN_WIDTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "panelMaxWidth",
+            "columnName": "PANEL_MAX_WIDTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "panelMinHeight",
+            "columnName": "PANEL_MIN_HEIGHT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "panelMaxHeight",
+            "columnName": "PANEL_MAX_HEIGHT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "panelAlign",
+            "columnName": "PANEL_ALIGN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cls",
+            "columnName": "CLS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "prompt",
+            "columnName": "PROMPT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "defaultValue",
+            "columnName": "DEFAULTVALUE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modeType",
+            "columnName": "MODETYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "label",
+            "columnName": "LABEL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "labelWidth",
+            "columnName": "LABEL_WIDTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "labelPosition",
+            "columnName": "LABEL_POSITION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "labelAlign",
+            "columnName": "LABEL_ALIGN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "multiLine",
+            "columnName": "MULTILINE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "editable",
+            "columnName": "EDITABLE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "disabled",
+            "columnName": "DISABLED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "readOnly",
+            "columnName": "READONLY",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "icons",
+            "columnName": "ICONS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "iconCls",
+            "columnName": "ICON_CLS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "iconAlign",
+            "columnName": "ICON_ALIGN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "iconWidth",
+            "columnName": "ICON_WIDTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "buttonText",
+            "columnName": "BUTTON_TEXT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "buttonIcon",
+            "columnName": "BUTTON_ICON",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "buttonAlign",
+            "columnName": "BUTTON_ALIGN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "multiple",
+            "columnName": "MULTIPLE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "multiValue",
+            "columnName": "MULTIVALUE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "reversed",
+            "columnName": "REVERSED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "selectOnNavigation",
+            "columnName": "SELECT_ON_NAVIGATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "separator",
+            "columnName": "SEPARATOR",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "hasDownArrow",
+            "columnName": "HAS_DOWN_ARROW",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "delay",
+            "columnName": "DELAY",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "currentText",
+            "columnName": "CURRENT_TEXT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "closeText",
+            "columnName": "CLOSE_TEXT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "okText",
+            "columnName": "OK_TEXT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "buttons",
+            "columnName": "BUTTONS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sharedCalendar",
+            "columnName": "SHARED_CALENDAR",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mix",
+            "columnName": "MIN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "max",
+            "columnName": "MAX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "precision",
+            "columnName": "PRECISION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "decimalSeparator",
+            "columnName": "DECIMAL_SEPARATOR",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "groupSeparator",
+            "columnName": "GROUP_SEPARATOR",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "prefix",
+            "columnName": "PREFIX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "suffix",
+            "columnName": "SUFFIX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "accept",
+            "columnName": "ACCEPT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "required",
+            "columnName": "REQUIRED",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_FORM_FIELD_TYPE",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `TYPE` TEXT, `NAME` TEXT, `VALUE` TEXT, `AGROUP` TEXT, `EDITOR` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "value",
+            "columnName": "VALUE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "agroup",
+            "columnName": "AGROUP",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "editor",
+            "columnName": "EDITOR",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_LIST_BUTTON",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `LISTID` TEXT, `URL` TEXT, `ICONCLS` TEXT, `TEXT` TEXT, `TEXTEN` TEXT, `ENABLED` TEXT, `VISIBLE` TEXT, `CLICK` TEXT, `SORTINDEX` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "listId",
+            "columnName": "LISTID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "URL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "iconCls",
+            "columnName": "ICONCLS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "text",
+            "columnName": "TEXT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "texten",
+            "columnName": "TEXTEN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "enabled",
+            "columnName": "ENABLED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "visible",
+            "columnName": "VISIBLE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "click",
+            "columnName": "CLICK",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortIndex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_LIST_FIELD",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `LISTID` TEXT, `FIELD` TEXT, `WIDTH` TEXT, `TITLE` TEXT, `ROWSPAN` TEXT, `COLSPAN` TEXT, `ALIGN` TEXT, `HALIGN` TEXT, `SORTABLE` TEXT, `CORDER` TEXT, `RESIZABLE` TEXT, `FIXED` TEXT, `HIDDEN` TEXT, `CHECKBOX` TEXT, `SORTINDEX` TEXT, `FILTERTYPE` TEXT, `FILTEROPTIONS` TEXT, `FILTEROP` TEXT, `VIEWHIDDEN` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "listId",
+            "columnName": "LISTID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "field",
+            "columnName": "FIELD",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "width",
+            "columnName": "WIDTH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "TITLE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rowspan",
+            "columnName": "ROWSPAN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "colspan",
+            "columnName": "COLSPAN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "align",
+            "columnName": "ALIGN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "halign",
+            "columnName": "HALIGN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortable",
+            "columnName": "SORTABLE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "corder",
+            "columnName": "CORDER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "resizable",
+            "columnName": "RESIZABLE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fixed",
+            "columnName": "FIXED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "hidden",
+            "columnName": "HIDDEN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "checkBox",
+            "columnName": "CHECKBOX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortIndex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "filterType",
+            "columnName": "FILTERTYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "filterOptions",
+            "columnName": "FILTEROPTIONS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "filterop",
+            "columnName": "FILTEROP",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "viewHidden",
+            "columnName": "VIEWHIDDEN",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_ORG_RES",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `ORGID` TEXT, `RESID` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "orgId",
+            "columnName": "ORGID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "resId",
+            "columnName": "RESID",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_RES",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `PARENTID` TEXT, `FULLID` TEXT, `CODE` TEXT, `NAME` TEXT, `TYPE` TEXT, `URL` TEXT, `ICONURL` TEXT, `TARGET` TEXT, `BUTTONID` TEXT, `DATAFILTER` TEXT, `DESCRIPTION` TEXT, `SORTINDEX` TEXT, `ICONCLASS` TEXT, `NAMEEN` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "parentId",
+            "columnName": "PARENTID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fullId",
+            "columnName": "FULLID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "URL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "iconUrl",
+            "columnName": "ICONURL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "target",
+            "columnName": "TARGET",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "buttonId",
+            "columnName": "BUTTONID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dataFilter",
+            "columnName": "DATAFILTER",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortIndex",
+            "columnName": "SORTINDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "iconClass",
+            "columnName": "ICONCLASS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nameen",
+            "columnName": "NAMEEN",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_ROLE",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `GROUPID` TEXT, `CODE` TEXT, `NAME` TEXT, `TYPE` TEXT, `DESCRIPTION` TEXT, `ORGID` TEXT, `ORGNAME` TEXT, `NAMEEN` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "groupId",
+            "columnName": "GROUPID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "code",
+            "columnName": "CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "orgId",
+            "columnName": "ORGID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "orgName",
+            "columnName": "ORGNAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nameen",
+            "columnName": "NAMEEN",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_ROLE_RES",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `RESID` TEXT, `ROLEID` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "resId",
+            "columnName": "RESID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "roleId",
+            "columnName": "ROLEID",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_ROLE_USER",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `USER_ID` TEXT, `ROLE_ID` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "USER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "roleId",
+            "columnName": "ROLE_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "SYS_USER_RES",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` TEXT NOT NULL, `USERID` TEXT, `RESID` TEXT, `DENYAUTH` TEXT, PRIMARY KEY(`ID`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "USERID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "resId",
+            "columnName": "RESID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "denyauth",
+            "columnName": "DENYAUTH",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"d3dd96c6ba4c26371479b776841ca8a0\")"
+    ]
+  }
+}

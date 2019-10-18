@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="java.lang.Double" />
+
+        <variable
+            name="presenter"
+            type="com.spe.dcs.project.cwarningsign.CWarningSignLookActivity.Presenter" />
+
+        <variable
+            name="sysUserEntity"
+            type="com.spe.dcs.system.sysuser.SysUserEntity" />
+
+        <variable
+            name="cWarningSignEntity"
+            type="com.spe.dcs.project.cwarningsign.CWarningSignEntity" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/login_scroller"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/padding_lv2"
+            android:layout_marginBottom="@dimen/padding_lv2"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/short_white_bg"
+                android:orientation="vertical">
+
+               <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_projectNumber"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_projectNumber"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv0_1"
+                             android:paddingRight="@dimen/padding_lv0_1"
+                             android:text=""
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6"></TextView>
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_subprojectNumber"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_subprojectNumber"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv0_1"
+                             android:paddingRight="@dimen/padding_lv0_1"
+                             android:text=""
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6"></TextView>
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_projectUnitNumber"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_projectUnitNumber"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv0_1"
+                             android:paddingRight="@dimen/padding_lv0_1"
+                             android:text=""
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6"></TextView>
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_functionalAreaCode"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_functionalAreaCode"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv0_1"
+                             android:paddingRight="@dimen/padding_lv0_1"
+                             android:text=""
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6"></TextView>
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_sectionNumber"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_sectionNumber"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv0_1"
+                             android:paddingRight="@dimen/padding_lv0_1"
+                             android:text=""
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6"></TextView>
+                     </LinearLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_crossingCode"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_crossingCode"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.crossingCode}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_branchengineeringNumber"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_branchengineeringNumber"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.branchengineeringNumber}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:text="@string/cWarningSign_collectionDate"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_collectionDate"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.collectionDate}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_warningSignNum"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_warningSignNum"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.warningSignNum}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_warningSignName"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_warningSignName"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.warningSignName}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_photoNum"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_photoNum"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.photoNum}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_warningSignStructure"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_warningSignStructure"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.warningSignStructure}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:text="@string/cWarningSign_burialDate"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_burialDate"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.burialDate}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_x"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep"
+                             android:visibility="gone" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_easting"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.easting}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_y"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep"
+                             android:visibility="gone" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_northing"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.northing}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_elevation"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_elevation"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.elevation}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_stakeNumber"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_stakeNumber"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.stakenumber}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_relativeMileage"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_relativeMileage"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.relativeMileage}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_function"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_stakeFunction"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.stakeFunction}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_phone"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_phone"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.phone}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_height"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_height"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.height}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_markerShape"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_markerShape"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.markerShape}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/bt_height"
+                     android:layout_marginLeft="@dimen/padding_lv2"
+                     android:layout_marginRight="@dimen/padding_lv2"
+                     android:background="@drawable/short_activity_bg"
+                     android:orientation="horizontal">
+
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerInParent="true"
+                             android:layout_centerVertical="true"
+                             android:text="@string/cWarningSign_district"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:layout_marginRight="@dimen/padding_lv2"
+                             android:text="*"
+                             android:textColor="@color/red_deep"
+                             android:visibility="gone" />
+                     </RelativeLayout>
+
+                     <View
+                         android:layout_width="1dp"
+                         android:layout_height="match_parent"
+                         android:background="@color/gray_9" />
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="1"
+                         android:gravity="center"
+                         android:orientation="horizontal">
+
+                         <TextView
+                             android:id="@+id/cWarningSign_district"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingLeft="@dimen/padding_lv2"
+                             android:paddingRight="@dimen/padding_lv2"
+                             android:text="@={cWarningSignEntity.district}"
+                             android:textColor="@color/black_light_e"
+                             android:textSize="@dimen/tv_6" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cWarningSign_supervisionUnitId"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cWarningSign_supervisionUnitId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv2"
+                            android:paddingRight="@dimen/padding_lv2"
+                            android:text="@={cWarningSignEntity.supervisionUnitId}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cWarningSign_supervisionEngineer"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cWarningSign_supervisionEngineer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv2"
+                            android:paddingRight="@dimen/padding_lv2"
+                            android:text="@={cWarningSignEntity.supervisionEngineer}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cWarningSign_collectionPerson"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cWarningSign_collectionPerson"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv2"
+                            android:paddingRight="@dimen/padding_lv2"
+                            android:text="@={cWarningSignEntity.collectionPerson}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bt_height"
+                    android:layout_marginLeft="@dimen/padding_lv2"
+                    android:layout_marginRight="@dimen/padding_lv2"
+                    android:background="@drawable/short_activity_bg"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/cWarningSign_constructionUnitId"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_9" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cWarningSign_constructionUnitId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_lv2"
+                            android:paddingRight="@dimen/padding_lv2"
+                            android:text="@={cWarningSignEntity.constructionUnitId}"
+                            android:textColor="@color/black_light_e"
+                            android:textSize="@dimen/tv_6" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

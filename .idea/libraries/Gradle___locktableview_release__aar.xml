@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: :locktableview-release:@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/locktableview-release.aar/c27da554eda27a53bac82563b3fb1d77/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/locktableview-release.aar/c27da554eda27a53bac82563b3fb1d77/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/locktableview-release.aar/c27da554eda27a53bac82563b3fb1d77/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

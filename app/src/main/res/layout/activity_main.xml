@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+<FrameLayout
+    android:background="@drawable/login_bgs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_gravity="left"
+        android:background="@drawable/login_main"></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#00000000"
+            android:theme="@style/ToolbarDarkOverflow">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="false"
+                    android:layout_marginLeft="110dp"
+                    android:text="胜利油田地面工程数字化建设"
+                    android:textColor="#fff"
+                    android:textSize="22sp" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/subtitle"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_centerHorizontal="false"-->
+<!--                    android:text="子标题"-->
+<!--                    android:textColor="#fff"-->
+<!--                    android:textSize="22sp" />-->
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/first_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/first_menu"
+                android:drawablePadding="10dp"
+                android:text="@string/app_name"
+                android:textSize="20sp"
+                android:textColor="#171717"></TextView>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:background="@drawable/circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"></ImageView>
+                <ImageView
+                    android:background="@drawable/circle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"></ImageView>
+                <ImageView
+                    android:background="@drawable/circle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"></ImageView>
+                <ImageView
+                    android:background="@drawable/circle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"></ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        <android.support.v4.widget.DrawerLayout-->
+<!--            android:id="@+id/drawer_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+            <!-- As the main content view, the view below consumes the entire
+                 space available using match_parent in both dimensions. -->
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light" />
+
+            <!-- The drawer is given a fixed width in dp and extends the full height of
+                 the container. -->
+
+<!--            <com.spe.dcs.tree.MenuView-->
+<!--                android:id="@+id/navigation_view"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:background="@android:color/background_light"></com.spe.dcs.tree.MenuView>-->
+
+<!--        </android.support.v4.widget.DrawerLayout>-->
+
+    </LinearLayout>
+
+</FrameLayout>
+</layout>

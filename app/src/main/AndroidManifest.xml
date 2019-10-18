@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.spe.dcs">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 摄像头权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 自动聚焦权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera" /> <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.permission.HARDWARE_TEST" /> <!-- 硬件测试 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".app.PcsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".project.ccoatingrepair.CCoatingRepairActivity"
+            android:launchMode="singleTask"></activity>
+        <activity
+            android:name=".tree.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:theme="@style/launch_theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".common.QrcodeActivity" />
+        <activity android:name=".login.SettingActivity" />
+        <activity android:name=".common.ImageListActivity" /> <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cshortsegmentprefabricat.CShortSegmentPrefabricatActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cshortsegmentprefabricat.CShortSegmentPrefabricatListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.supervisor.SupervisorLoginActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.csitebendprefabricat.CSitebendPrefabricatListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.csitebendprefabricat.CSitebendPrefabricatActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.craytestm.CRayTestMActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.craytestm.CRayTestMListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.craytests.CRayTestSActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.craytests.CRayTestSListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cultrasonictestm.CUltrasonicTestMActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cultrasonictestm.CUltrasonicTestMListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cultrasonictests.CUltrasonicTestSActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cultrasonictests.CUltrasonicTestSListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpenetrationtestm.CPenetrationTestMActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpenetrationtestm.CPenetrationTestMListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cmagnetictestm.CMagneticTestMActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cmagnetictestm.CMagneticTestMListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.canticoatingrepair.CAntiCoatingRepairActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.canticoatingrepair.CCoatingRepairListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.canticoatingtest.CAntiCoatingTestActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.canticoatingtest.CAntiCoatingTestListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cauanodebed.CAuanodeBedActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cauanodebed.CAuanodeBedListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cbackfill.CBackfillActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cbackfill.CBackfillListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cboxculvertcross.CBoxculvertCrossActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cboxculvertcross.CBoxculvertCrossListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccasingpipe.CCasingPipeActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccasingpipe.CCasingPipeListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccpcable.CCpCableActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccpcable.CCpCableListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccpcableconnection.CCpCableConnectionActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccpcableconnection.CCpCableConnectionListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccppower.CCpPowerActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccppower.CCpPowerListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccptestpost.CCpTestPostActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccptestpost.CCpTestPostListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccrossover.CCrossOverActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccrossover.CCrossOverListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cfoccross.CFocCrossActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cfoccross.CFocCrossListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".project.copencutcro.COpenCutCroActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".project.copencutcro.COpenCutCroListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.copencutcro.COpenCutCroLookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.copencutcro.COpenCutCroLookPicActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.celectricdetection.CElectricDetectionActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.celectricdetection.CElectricDetectionListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cfocjointbox.CFocJointBoxListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cfocjointbox.CFocJointBoxActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cfoclaying.CFocLayingListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cfoclaying.CFocLayingActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cfoctest.CFocTestActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cfoctest.CFocTestListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cgeologicmonitor.CGeologicMonitorActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cgeologicmonitor.CGeologicMonitorListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.chandhole.CHandHoleActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.chandhole.CHandHoleListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".project.chddcro.CHddCroActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".project.chddcro.CHddCroListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.chydraulicprotection.CHydraulicProtectionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".project.chydraulicprotection.CHydraulicProtectionListActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cinsulatingpart.CInsulatingPartActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cinsulatingpart.CInsulatingPartListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cinsulation.CInsulationActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cinsulation.CInsulationListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cislulationjointprotector.CIslulationJointProtectorActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cislulationjointprotector.CIslulationJointProtectorListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.clandrestoraccept.CLandrestorAcceptActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.clandrestoraccept.CLandrestorAcceptListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.clinecompletionpoint.CLineCompletionpointActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.clinecompletionpoint.CLineCompletionpointListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cmaintenanceroad.CMaintenanceRoadActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cmaintenanceroad.CMaintenanceRoadListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cmaintenanceroadpoint.CMaintenanceRoadPointActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cmaintenanceroadpoint.CMaintenanceRoadPointListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".project.cmarkstake.CMarkStakeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".project.cmarkstake.CMarkStakeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.ctrussaerialcro.CTrussAerialCroActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".project.ctrussaerialcro.CTrussAerialCroListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.ctrussaerialcro.CTrussAerialCroLookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.ctrussaerialcro.CTrussAerialCroLookPicActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpipelineappurtenance.CPipelineAppurtenanceActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpipelineappurtenance.CPipelineAppurtenanceListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpipelinecaliper.CPipelineCaliperActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpipelinecaliper.CPipelineCaliperListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpipelinedrying.CPipelineDryingActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpipelinedrying.CPipelineDryingListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpipelinepigging.CPipelinePiggingActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpipelinepigging.CPipelinePiggingListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cploardrainager.CPloarDrainagerActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cploardrainager.CPloarDrainagerListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpressuretest.CPressureTestActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpressuretest.CPressureTestListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpushpipecross.CPushpipeCrossActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpushpipecross.CPushpipeCrossListActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpushpipecross.CPushpipeCrossLookActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cpushpipecross.CPushpipeCrossLookPicActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.croadbridgeculvert.CRoadBridgeCulvertActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.croadbridgeculvert.CRoadBridgeCulvertListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.csacrificialanode.CSacrificialAnodeActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.csacrificialanode.CSacrificialAnodeListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.csolidstatedcdecoup.CSolidStateDcdecoupActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.csolidstatedcdecoup.CSolidStateDcdecoupListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.csurveying.CSurveyingActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.csurveying.CSurveyingListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ctemarkstone.CTeMarkStoneActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ctemarkstone.CTeMarkStoneListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ctrenchexcavation.CTrenchExcavationActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ctrenchexcavation.CTrenchExcavationListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cundergroundobstacle.CUndergroundObstacleActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cundergroundobstacle.CUndergroundObstacleListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".project.cwarningsign.CWarningSignActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".project.cwarningsign.CWarningSignListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".project.cjointcoating.CJointCoatingLookPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.cjointcoating.CJointCoatingLookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.cjointcoating.CJointCoatingListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.cjointcoating.CJointCoatingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cweldcut.CWeldcutActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cweldcut.CWeldcutListActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cshortsegmentprefabricat.CShortSegmentPrefabricatLookActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cshortsegmentprefabricat.CShortSegmentPrefabricatLookPicActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.csitebendprefabricat.CSitebendPrefabricatLookPicActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.csitebendprefabricat.CSitebendPrefabricatLookActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".project.cweldjoint.CWeldJointListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.cweldjoint.CWeldJointActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".project.cweldjoint.CWeldJointLookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.cweldjoint.CWeldJointLookPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spe.dcs.project.ccoatingrepair.CCoatingRepairLookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spe.dcs.project.ccoatingrepair.CCoatingRepairLookPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spe.dcs.project.ccoatingrepair.CCoatingRepairListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.creworkweldjoint.CReworkWeldJointActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.creworkweldjoint.CReworkWeldJointListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.creworkweldjoint.CReworkWeldJointLookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.creworkweldjoint.CReworkWeldJointLookPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.cmarkstake.CMarkStakeLookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.cmarkstake.CMarkStakeLookPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.cwarningsign.CWarningSignLookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.cwarningsign.CWarningSignLookPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.chydraulicprotection.CHydraulicProtectionLookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.chydraulicprotection.CHydraulicProtectionLookPicActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cboxculvertcross.CBoxculvertCrossLookActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.cboxculvertcross.CBoxculvertCrossLookPicActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".project.chddcro.CHddCroLookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".project.chddcro.CHddCroLookPicActivity"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccrossover.CCrossOverLookActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.ccrossover.CCrossOverLookPicActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".project.cweldjoint.CWeldJointBackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" /> <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.analysicofmonthincreasingpipeline.AnalysicofMonthincreasingPipelineListActivity" -->
+        <!-- android:screenOrientation="landscape"> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.analysicofweldpipeline.AnalysicofWeldPipelineListActivity" -->
+        <!-- android:screenOrientation="landscape"> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.analysicofweldcondition.AnalysicofWeldConditionListActivity" -->
+        <!-- android:screenOrientation="landscape"> -->
+        <!-- &lt;!&ndash;<intent-filter>&ndash;&gt; -->
+        <!-- &lt;!&ndash;<action android:name="android.intent.action.MAIN" />&ndash;&gt; -->
+        <!-- &lt;!&ndash;<category android:name="android.intent.category.LAUNCHER" />&ndash;&gt; -->
+        <!-- &lt;!&ndash;</intent-filter>&ndash;&gt; -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name="com.spe.dcs.project.analysicofdatacondition.AnalysicofDataConditionListActivity" -->
+        <!-- android:screenOrientation="landscape"> -->
+        <!-- </activity> -->
+        <!-- 7.0以上需要申请的 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.spe.dcs.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
